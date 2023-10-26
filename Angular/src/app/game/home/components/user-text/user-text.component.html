@@ -1,0 +1,5 @@
+
+<hr>
+<div *ngFor="let c of this.ExpectedInput.split(''); index as i; first as isFirst">
+    <input #refEl placeholder="{{c}}" maxlength="1" autofocus type="text" id="text-input-id-{{i}}" (input)="ProceedInput(c,i,refEl)">
+</div>

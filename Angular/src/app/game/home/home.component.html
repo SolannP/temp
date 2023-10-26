@@ -1,0 +1,29 @@
+<p>home works!</p>
+
+<h2>Nominatif</h2>
+<p>
+    Ich
+    Du
+    Er
+    Sie
+    Es
+    wir
+    Ihr
+    Sie
+    sie
+</p>
+<input id="myInput" placeholder="">
+
+<app-target-text 
+  [TargetText]="TargetText">
+</app-target-text>
+<app-user-text 
+  
+  [ExpectedInput]="TargetText"
+  (EventUserTypeText)="LogData($event)">
+</app-user-text>
+<!--
+ <expected>   </expected>
+<input-user></input-user>
+
+-->
