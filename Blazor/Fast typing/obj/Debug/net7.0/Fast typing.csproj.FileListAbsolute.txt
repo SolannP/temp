@@ -1,0 +1,37 @@
+C:\Users\solan\Documents\Dev\lab\Blazor\Fast typing\bin\Debug\net7.0\appsettings.Development.json
+C:\Users\solan\Documents\Dev\lab\Blazor\Fast typing\bin\Debug\net7.0\appsettings.json
+C:\Users\solan\Documents\Dev\lab\Blazor\Fast typing\bin\Debug\net7.0\Fast typing.staticwebassets.runtime.json
+C:\Users\solan\Documents\Dev\lab\Blazor\Fast typing\bin\Debug\net7.0\Fast typing.exe
+C:\Users\solan\Documents\Dev\lab\Blazor\Fast typing\bin\Debug\net7.0\Fast typing.deps.json
+C:\Users\solan\Documents\Dev\lab\Blazor\Fast typing\bin\Debug\net7.0\Fast typing.runtimeconfig.json
+C:\Users\solan\Documents\Dev\lab\Blazor\Fast typing\bin\Debug\net7.0\Fast typing.dll
+C:\Users\solan\Documents\Dev\lab\Blazor\Fast typing\bin\Debug\net7.0\Fast typing.pdb
+C:\Users\solan\Documents\Dev\lab\Blazor\Fast typing\obj\Debug\net7.0\Fast typing.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\solan\Documents\Dev\lab\Blazor\Fast typing\obj\Debug\net7.0\Fast typing.AssemblyInfoInputs.cache
+C:\Users\solan\Documents\Dev\lab\Blazor\Fast typing\obj\Debug\net7.0\Fast typing.AssemblyInfo.cs
+C:\Users\solan\Documents\Dev\lab\Blazor\Fast typing\obj\Debug\net7.0\Fast typing.csproj.CoreCompileInputs.cache
+C:\Users\solan\Documents\Dev\lab\Blazor\Fast typing\obj\Debug\net7.0\Fast typing.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\solan\Documents\Dev\lab\Blazor\Fast typing\obj\Debug\net7.0\Fast typing.RazorAssemblyInfo.cache
+C:\Users\solan\Documents\Dev\lab\Blazor\Fast typing\obj\Debug\net7.0\Fast typing.RazorAssemblyInfo.cs
+C:\Users\solan\Documents\Dev\lab\Blazor\Fast typing\obj\Debug\net7.0\staticwebassets\msbuild.Fast typing.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\solan\Documents\Dev\lab\Blazor\Fast typing\obj\Debug\net7.0\staticwebassets\msbuild.build.Fast typing.props
+C:\Users\solan\Documents\Dev\lab\Blazor\Fast typing\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.Fast typing.props
+C:\Users\solan\Documents\Dev\lab\Blazor\Fast typing\obj\Debug\net7.0\staticwebassets\msbuild.buildTransitive.Fast typing.props
+C:\Users\solan\Documents\Dev\lab\Blazor\Fast typing\obj\Debug\net7.0\staticwebassets.pack.json
+C:\Users\solan\Documents\Dev\lab\Blazor\Fast typing\obj\Debug\net7.0\staticwebassets.build.json
+C:\Users\solan\Documents\Dev\lab\Blazor\Fast typing\obj\Debug\net7.0\staticwebassets.development.json
+C:\Users\solan\Documents\Dev\lab\Blazor\Fast typing\obj\Debug\net7.0\scopedcss\Shared\MainLayout.razor.rz.scp.css
+C:\Users\solan\Documents\Dev\lab\Blazor\Fast typing\obj\Debug\net7.0\scopedcss\Shared\NavMenu.razor.rz.scp.css
+C:\Users\solan\Documents\Dev\lab\Blazor\Fast typing\obj\Debug\net7.0\scopedcss\bundle\Fast typing.styles.css
+C:\Users\solan\Documents\Dev\lab\Blazor\Fast typing\obj\Debug\net7.0\scopedcss\projectbundle\Fast typing.bundle.scp.css
+C:\Users\solan\Documents\Dev\lab\Blazor\Fast typing\obj\Debug\net7.0\Fast typing.dll
+C:\Users\solan\Documents\Dev\lab\Blazor\Fast typing\obj\Debug\net7.0\refint\Fast typing.dll
+C:\Users\solan\Documents\Dev\lab\Blazor\Fast typing\obj\Debug\net7.0\Fast typing.pdb
+C:\Users\solan\Documents\Dev\lab\Blazor\Fast typing\obj\Debug\net7.0\Fast typing.genruntimeconfig.cache
+C:\Users\solan\Documents\Dev\lab\Blazor\Fast typing\obj\Debug\net7.0\ref\Fast typing.dll
+C:\Users\solan\Documents\Dev\lab\Blazor\Fast typing\obj\Debug\net7.0\scopedcss\Pages\TypingGame\MainGame.razor.rz.scp.css
+C:\Users\solan\Documents\Dev\lab\Blazor\Fast typing\obj\Debug\net7.0\Fast typing.csproj.AssemblyReference.cache
+C:\Users\solan\Documents\Dev\lab\Blazor\Fast typing\bin\Debug\net7.0\Newtonsoft.Json.dll
+C:\Users\solan\Documents\Dev\lab\Blazor\Fast typing\bin\Debug\net7.0\Fast typing Kernel.dll
+C:\Users\solan\Documents\Dev\lab\Blazor\Fast typing\bin\Debug\net7.0\Fast typing Kernel.pdb
+C:\Users\solan\Documents\Dev\lab\Blazor\Fast typing\obj\Debug\net7.0\Fast typing.csproj.CopyComplete

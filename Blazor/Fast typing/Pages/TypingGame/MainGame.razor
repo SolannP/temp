@@ -1,0 +1,322 @@
+﻿@page "/game"
+@using Fast_typing.Data;
+@using Fast_typing_Kernel;
+@inject AppService AppService
+
+<h3>TypingGame</h3>
+
+<button type="button" class="btn btn-success">@charStats.SuccesPercent% (@charStats.TotalSucces / @charStats.TotalStoke)</button>
+<button type="button" class="btn btn-danger">@charStats.ErrorPercent% (@charStats.TotalError / @charStats.TotalStoke)</button>
+<button type="button" class="btn btn-info">@charStats.Speed char/s</button>
+
+<p>
+    <button type="button" class="btn btn-success">@wordStats.SuccesPercent% (@wordStats.TotalSucces / @wordStats.TotalWord)</button>
+    <button type="button" class="btn btn-danger">@wordStats.ErrorPercent% (@wordStats.TotalError / @wordStats.TotalWord)</button>
+    <button type="button" class="btn btn-info">@wordStats.Speed wps</button>
+</p>
+
+<button type="button" class="btn btn-warning" @onclick="DecreaseDifficulty">◀◀ Easier</button>
+<button type="button" class="btn btn-primary" @onclick="OnInitializedAsync">Reset</button>
+<button type="button" class="btn btn-warning" @onclick="IncreaseDifficulty">Harder ▶▶</button>
+
+<div class="target_game">
+    @for (var iLine = 0; iLine < targetGameText.Length; iLine++)
+    {
+        <div class="@(iLine == indexLines ? "target_game--line_current" : "")">
+            @for (var iWord = 0; iWord < targetGameText[iLine].Length; iWord++)
+            {
+                @if (iLine == indexLines && iWord == indexWord) /* current word */ 
+                {
+                    <div class="target_game--word target_game--word_current">
+                        @for(var iChar = 0 ; iChar < targetGameText[iLine][iWord].Length ; iChar++)
+                        {
+                            @if (iChar == currentWord.Length)
+                            {
+                                <span class="target_game--char_current">@targetGameText[iLine][iWord][iChar]</span>
+                            }
+                            else if (currentWord.ElementAtOrDefault(iChar) == targetGameText[iLine][iWord][iChar])
+                            {
+                                <span class="target_game--char_succes">@targetGameText[iLine][iWord][iChar]</span>
+                            }
+                            else if (currentWord.ElementAtOrDefault(iChar) != default && currentWord.ElementAtOrDefault(iChar) != targetGameText[iLine][iWord][iChar])
+                            {
+                                <span class="target_game--char_error">@targetGameText[iLine][iWord][iChar]</span>
+                            }
+                            else
+                            {
+                                <span>@targetGameText[iLine][iWord][iChar]</span>
+                            }
+                        }
+                    </div>
+                }
+                else {
+                    <div class="target_game--word">@targetGameText[iLine][iWord]</div>
+                }
+            }
+        </div>
+    }
+</div>
+
+<input disabled="@gameStop" @bind="CurrentWord" @bind:event="oninput" />
+
+<div class="alert alert-secondary mt-4">
+    <span class="oi oi-warning me-2" aria-hidden="true"></span>
+    <span class="text-nowrap">
+        For hard mode, please use a computer, some caracter are hard to make on handy device.
+    </span>
+
+    <table class="table table-hover table-sm table-secondary">
+        <thead>
+            <tr>
+                <th scope="col">Special letter</th>
+                <th scope="col">Shortcut </th>
+                <th scope="col">Name</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><th scope="row">Ä</th><td>ALT + 0196</td><td>	Uppercase Umlaut (A)</td>	</tr>
+            <tr><th scope="row">Ö</th><td>ALT + 0214</td><td>	Uppercase Umlaut (O)</td></tr>
+            <tr><th scope="row">Ü</th><td>ALT + 0220</td><td>	Uppercase Umlaut (U)</td></tr>
+            <tr><th scope="row">ß</th><td>ALT + 0223</td><td>   Eszett (ss)</td></tr>
+            <tr><th scope="row">ä</th><td>ALT + 0228</td><td>	Lowercase Umlaut (a)	</td></tr>
+            <tr><th scope="row">ö</th><td>ALT + 0246</td><td>	Lowercase Umlaut (o)</td>	</tr>
+            <tr><th scope="row">ü</th><td>ALT + 0252</td><td>	Lowercase Umlaut (u)</td>	</tr>
+        </tbody>
+    </table>
+    Some practice can be done there : <input style="background-color:lightgrey" placeholder="ALT 0223" />
+</div>
+<div class="alert alert-info mt-4">
+    <span class="oi oi-info me-2" aria-hidden="true"></span>
+    <span class="text-nowrap">
+        Userfull shortcut for clear input in a very effective way
+    </span>
+
+    <table class="table table-hover table-sm table-info">
+        <thead>
+            <tr>
+                <th scope="col">Shortcut</th>
+                <th scope="col">Effect</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><th scope="row">CTRL + DEL</th><td>Remove all text from cursor to the end</td></tr>
+            <tr><th scope="row">CTRL + RETRUN CARIAGE</th><td>Remove all text from cursor to the beginning</td></tr>
+        </tbody>
+    </table>
+    Some practice can be done there : <input style="background-color:lightgrey" placeholder="ALT 0223" />
+</div>
+
+
+@code {
+    public string[][] targetGameText = new string[][] { };
+    public int indexLines = 0;
+    public int indexWord = 0;
+    public string targetWord = "";
+    public string currentWord = "";
+    public string bufferWord = "";
+    private WordData currentWordData = new();
+    private WordStatistic wordStats = new();
+    private CharacterStatistic charStats = new();
+    public bool gameStop = false;
+
+    public List<Difficulty> difficulties = new();
+    public int currentLevel = 0;
+
+    protected override async Task OnInitializedAsync()
+    {
+        var idTargetText = (await AppService.GetCommonAppDataAsync()).texts.First().id_text;
+        difficulties = (await AppService.GetTargetTextDataAsync(idTargetText)).difficulties;
+        indexLines = 0;
+        indexWord = 0;
+        targetWord = "";
+        currentWord = "";
+        bufferWord = "";
+        currentWordData = new();
+        wordStats = new();
+        charStats = new();
+        gameStop = false;
+
+        targetGameText = ProceedTargetTextLevel(difficulties, currentLevel);
+        targetWord = targetGameText[indexLines][indexWord];
+    }
+
+    public string CurrentWord
+    {
+        get => currentWord;
+        set
+        {
+            currentWord = value;
+            ProceedInput();
+        }
+    }
+
+    public void Reset()
+    {
+        indexLines = 0;
+        indexWord = 0;
+        targetWord = "";
+        currentWord = "";
+        bufferWord = "";
+        currentWordData = new();
+        wordStats = new();
+        charStats = new();
+        gameStop = false;
+
+        targetGameText = ProceedTargetTextLevel(difficulties, currentLevel);
+        targetWord = targetGameText[indexLines][indexWord];
+    }
+    public void IncreaseDifficulty()
+    {
+        Reset();
+        var result = difficulties.FirstOrDefault(diff => diff.level == (currentLevel + 1));
+        if (result == default) return;
+        currentLevel++;
+        targetGameText = ProceedTargetTextLevel(difficulties, currentLevel);
+        targetWord = targetGameText[indexLines][indexWord];
+
+    }
+
+    public void DecreaseDifficulty()
+    {
+        Reset();
+        var result = difficulties.FirstOrDefault(diff => diff.level == (currentLevel - 1));
+        if (result == default) return;
+        currentLevel--;
+        targetGameText = ProceedTargetTextLevel(difficulties, currentLevel);
+        targetWord = targetGameText[indexLines][indexWord];
+    }
+
+    public void ProceedInput()
+    {
+        if (gameStop) return;
+        if (string.IsNullOrWhiteSpace(currentWord)) { // beginning
+            currentWord = "";
+            bufferWord = "";
+            return;
+        }
+        if (currentWord.Length < bufferWord.Length) // cariage return have been stroke
+        {
+            bufferWord = currentWord;
+            return; 
+        }
+        if (targetGameText[indexLines][indexWord].Contains(currentWord)) // Succes stroke
+        {
+            currentWordData.AddSucces();
+            if (currentWord == targetWord) // End of the word
+            {
+                wordStats.AddWord(currentWordData);
+                currentWordData = new();
+                if ((indexWord + 1) == targetGameText[indexLines].Length) // End of the line
+                {
+                    bufferWord = "";
+                    currentWord = "";
+                    if ( (indexLines + 1) != targetGameText.Length) // not the end of the game
+                    {
+                        indexLines++;
+                        indexWord = 0;
+                    }
+                    else if ((indexLines + 1) == targetGameText.Length) // end of the game
+                    {
+                        gameStop = true;
+                        return;
+                    }
+                    targetWord = targetGameText[indexLines][indexWord];
+
+                }
+                else
+                {
+                    indexWord++; // Next word
+                    targetWord = targetGameText[indexLines][indexWord];
+                    currentWord = "";
+                    bufferWord = currentWord;
+                }
+
+            }
+            else
+            {
+                bufferWord = currentWord;
+            }
+        }
+        else // error stroke
+        {
+            currentWordData.AddError();
+            bufferWord = currentWord;
+        }
+
+        // Stroke checks
+        string? word = targetGameText.ElementAtOrDefault(indexLines)?.ElementAtOrDefault(indexWord);
+        if (string.IsNullOrEmpty(word)) return;
+
+        bool isSucces = word.Contains(currentWord);
+        charStats.stroks.Add(new TypingData { isSuccesStroke = isSucces, timestamp = DateTime.Now });
+    }
+
+
+    public static string[][] ProceedTargetTextLevel(List<Difficulty> difficulties, int level)
+    {
+        string[] lines = difficulties.First(difficulty => difficulty.level == level)
+                                                    .text.Split(new string[] { "\n", "\r\n" }, StringSplitOptions.RemoveEmptyEntries);
+        string[][] slicedLines = lines.Select(line => line.Split(' ').Select(word => word + " ").ToArray()).ToArray();
+
+        return slicedLines;
+    }
+
+    public struct TypingData
+    {
+        public readonly DateTime timestamp { get; init; }
+        public readonly bool isSuccesStroke { get; init; }
+        public TypingData(bool isSucces) {
+            isSuccesStroke = isSucces;
+            timestamp = DateTime.Now;
+        }
+    }
+    public class WordData
+    {
+        public List<TypingData> stroks = new();
+        public TimeSpan TotalEnlapsed { get => stroks.DefaultIfEmpty().LastOrDefault().timestamp.TimeOfDay - stroks.DefaultIfEmpty().FirstOrDefault().timestamp.TimeOfDay; }
+        public int TotalStoke { get => stroks.Count; }
+        public int TotalSucces { get => stroks.Where(s => s.isSuccesStroke).Count(); }
+        public int TotalError { get => stroks.Where(s => !s.isSuccesStroke).Count(); }
+        public double Speed { get => TotalStoke == 0 ? 0 : Math.Round(TotalStoke / TotalEnlapsed.TotalSeconds, 2); }
+        public double SuccesRatio { get => TotalStoke == 0 ? 0 : Math.Round((double)(TotalSucces / TotalStoke), 2); }
+        public double ErrorRatio { get => TotalStoke == 0 ? 0 : Math.Round((double)(TotalError / TotalStoke), 2); }
+        public double SuccesPercent { get => SuccesRatio * 100; }
+        public double ErrorPercent { get => ErrorRatio * 100; }
+        public bool IsAnyErrorStroke { get => stroks.Any(s => s.isSuccesStroke is false); }
+        public bool IsOnlySuccesStroke { get => IsAnyErrorStroke is false; }
+        public void AddSucces() => stroks.Add(new(isSucces: true));
+        public void AddError() => stroks.Add(new(isSucces: false));
+
+        public WordData Clone() => new WordData() { stroks = new List<TypingData>(stroks) };
+    }
+
+    public class WordStatistic
+    {
+        private List<WordData> words = new();
+        public int TotalWord { get => words.Count; }
+        public int TotalSucces { get => words.Sum(w => w.IsOnlySuccesStroke ? 1 : 0); }
+        public int TotalError { get => words.Sum(w => w.IsAnyErrorStroke ? 1 : 0); }
+        public TimeSpan TotalEnlapsed { get => words.DefaultIfEmpty() == default ? TimeSpan.Zero : words.LastOrDefault()!.stroks.Max(s => s.timestamp).TimeOfDay - words.FirstOrDefault()!.stroks.Min(s => s.timestamp).TimeOfDay; }
+        public double Speed { get => TotalWord == 0 ? 0 : Math.Round((double)TotalWord / TotalEnlapsed.TotalSeconds, 2); }
+        public double SuccesRatio { get => TotalWord == 0 ? 0 : Math.Round((double)TotalSucces / (double)TotalWord,2); }
+        public double ErrorRatio { get => TotalWord == 0 ? 0 :  Math.Round((double)TotalError / (double)TotalWord,2); }
+        public int SuccesPercent { get => (int)Math.Round(SuccesRatio * 100); }
+        public int ErrorPercent { get => (int)Math.Round(ErrorRatio * 100); }
+        public void AddWord(WordData word) => words.Add(word.Clone()); // prevent pass by ref with side effect
+    }
+
+    public class CharacterStatistic
+    {
+        public List<TypingData> stroks = new();
+        public int TotalStoke { get => stroks.Count; }
+        public int TotalSucces { get => stroks.Where(s => s.isSuccesStroke).Count(); }
+        public int TotalError { get => stroks.Where(s => !s.isSuccesStroke).Count(); }
+        public TimeSpan TotalEnlapsed { get => stroks.DefaultIfEmpty().Max(s => s.timestamp).TimeOfDay - stroks.DefaultIfEmpty().Min(s => s.timestamp).TimeOfDay ;}
+        public double Speed { get => TotalStoke == 0 ? 0 : Math.Round((double)TotalStoke / TotalEnlapsed.TotalSeconds, 2); }
+        public double SuccesRatio { get => TotalStoke == 0 ? 0 : Math.Round((double)TotalSucces / (double)TotalStoke, 2); }
+        public double ErrorRatio { get => TotalStoke == 0 ? 0 : Math.Round((double)TotalError / (double)TotalStoke, 2); }
+        public int SuccesPercent { get => (int)Math.Round(SuccesRatio * 100); }
+        public int ErrorPercent { get => (int)Math.Round(ErrorRatio * 100); }
+        public double WordSpeed { get =>  100d; }
+    }
+}

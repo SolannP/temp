@@ -1,0 +1,37 @@
+C:\Users\solan\Documents\Dev\lab\Blazor\Back fast typing\bin\Debug\net7.0\appsettings.Development.json
+C:\Users\solan\Documents\Dev\lab\Blazor\Back fast typing\bin\Debug\net7.0\appsettings.json
+C:\Users\solan\Documents\Dev\lab\Blazor\Back fast typing\bin\Debug\net7.0\Back fast typing.exe
+C:\Users\solan\Documents\Dev\lab\Blazor\Back fast typing\bin\Debug\net7.0\Back fast typing.deps.json
+C:\Users\solan\Documents\Dev\lab\Blazor\Back fast typing\bin\Debug\net7.0\Back fast typing.runtimeconfig.json
+C:\Users\solan\Documents\Dev\lab\Blazor\Back fast typing\bin\Debug\net7.0\Back fast typing.dll
+C:\Users\solan\Documents\Dev\lab\Blazor\Back fast typing\bin\Debug\net7.0\Back fast typing.pdb
+C:\Users\solan\Documents\Dev\lab\Blazor\Back fast typing\bin\Debug\net7.0\Microsoft.AspNetCore.OpenApi.dll
+C:\Users\solan\Documents\Dev\lab\Blazor\Back fast typing\bin\Debug\net7.0\Microsoft.OpenApi.dll
+C:\Users\solan\Documents\Dev\lab\Blazor\Back fast typing\bin\Debug\net7.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\solan\Documents\Dev\lab\Blazor\Back fast typing\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\solan\Documents\Dev\lab\Blazor\Back fast typing\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\solan\Documents\Dev\lab\Blazor\Back fast typing\obj\Debug\net7.0\Back fast typing.csproj.AssemblyReference.cache
+C:\Users\solan\Documents\Dev\lab\Blazor\Back fast typing\obj\Debug\net7.0\Back fast typing.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\solan\Documents\Dev\lab\Blazor\Back fast typing\obj\Debug\net7.0\Back fast typing.AssemblyInfoInputs.cache
+C:\Users\solan\Documents\Dev\lab\Blazor\Back fast typing\obj\Debug\net7.0\Back fast typing.AssemblyInfo.cs
+C:\Users\solan\Documents\Dev\lab\Blazor\Back fast typing\obj\Debug\net7.0\Back fast typing.csproj.CoreCompileInputs.cache
+C:\Users\solan\Documents\Dev\lab\Blazor\Back fast typing\obj\Debug\net7.0\Back fast typing.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\solan\Documents\Dev\lab\Blazor\Back fast typing\obj\Debug\net7.0\Back fast typing.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\solan\Documents\Dev\lab\Blazor\Back fast typing\obj\Debug\net7.0\staticwebassets\msbuild.Back fast typing.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\solan\Documents\Dev\lab\Blazor\Back fast typing\obj\Debug\net7.0\staticwebassets\msbuild.build.Back fast typing.props
+C:\Users\solan\Documents\Dev\lab\Blazor\Back fast typing\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.Back fast typing.props
+C:\Users\solan\Documents\Dev\lab\Blazor\Back fast typing\obj\Debug\net7.0\staticwebassets\msbuild.buildTransitive.Back fast typing.props
+C:\Users\solan\Documents\Dev\lab\Blazor\Back fast typing\obj\Debug\net7.0\staticwebassets.pack.json
+C:\Users\solan\Documents\Dev\lab\Blazor\Back fast typing\obj\Debug\net7.0\staticwebassets.build.json
+C:\Users\solan\Documents\Dev\lab\Blazor\Back fast typing\obj\Debug\net7.0\staticwebassets.development.json
+C:\Users\solan\Documents\Dev\lab\Blazor\Back fast typing\obj\Debug\net7.0\scopedcss\bundle\Back fast typing.styles.css
+C:\Users\solan\Documents\Dev\lab\Blazor\Back fast typing\obj\Debug\net7.0\Back fast typing.csproj.CopyComplete
+C:\Users\solan\Documents\Dev\lab\Blazor\Back fast typing\obj\Debug\net7.0\Back fast typing.dll
+C:\Users\solan\Documents\Dev\lab\Blazor\Back fast typing\obj\Debug\net7.0\refint\Back fast typing.dll
+C:\Users\solan\Documents\Dev\lab\Blazor\Back fast typing\obj\Debug\net7.0\Back fast typing.pdb
+C:\Users\solan\Documents\Dev\lab\Blazor\Back fast typing\obj\Debug\net7.0\Back fast typing.genruntimeconfig.cache
+C:\Users\solan\Documents\Dev\lab\Blazor\Back fast typing\obj\Debug\net7.0\ref\Back fast typing.dll
+C:\Users\solan\Documents\Dev\lab\Blazor\Back fast typing\bin\Debug\net7.0\Fast typing App.dll
+C:\Users\solan\Documents\Dev\lab\Blazor\Back fast typing\bin\Debug\net7.0\Fast typing App.pdb
+C:\Users\solan\Documents\Dev\lab\Blazor\Back fast typing\bin\Debug\net7.0\Fast typing Kernel.dll
+C:\Users\solan\Documents\Dev\lab\Blazor\Back fast typing\bin\Debug\net7.0\Fast typing Kernel.pdb

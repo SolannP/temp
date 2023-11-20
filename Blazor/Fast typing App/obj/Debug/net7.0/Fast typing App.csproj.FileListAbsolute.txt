@@ -1,0 +1,15 @@
+C:\Users\solan\Documents\Dev\lab\Blazor\Fast typing App\bin\Debug\net7.0\Fast typing App.deps.json
+C:\Users\solan\Documents\Dev\lab\Blazor\Fast typing App\bin\Debug\net7.0\Fast typing App.dll
+C:\Users\solan\Documents\Dev\lab\Blazor\Fast typing App\bin\Debug\net7.0\Fast typing App.pdb
+C:\Users\solan\Documents\Dev\lab\Blazor\Fast typing App\obj\Debug\net7.0\Fast typing App.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\solan\Documents\Dev\lab\Blazor\Fast typing App\obj\Debug\net7.0\Fast typing App.AssemblyInfoInputs.cache
+C:\Users\solan\Documents\Dev\lab\Blazor\Fast typing App\obj\Debug\net7.0\Fast typing App.AssemblyInfo.cs
+C:\Users\solan\Documents\Dev\lab\Blazor\Fast typing App\obj\Debug\net7.0\Fast typing App.csproj.CoreCompileInputs.cache
+C:\Users\solan\Documents\Dev\lab\Blazor\Fast typing App\obj\Debug\net7.0\Fast typing App.dll
+C:\Users\solan\Documents\Dev\lab\Blazor\Fast typing App\obj\Debug\net7.0\refint\Fast typing App.dll
+C:\Users\solan\Documents\Dev\lab\Blazor\Fast typing App\obj\Debug\net7.0\Fast typing App.pdb
+C:\Users\solan\Documents\Dev\lab\Blazor\Fast typing App\obj\Debug\net7.0\ref\Fast typing App.dll
+C:\Users\solan\Documents\Dev\lab\Blazor\Fast typing App\bin\Debug\net7.0\Fast typing Kernel.dll
+C:\Users\solan\Documents\Dev\lab\Blazor\Fast typing App\bin\Debug\net7.0\Fast typing Kernel.pdb
+C:\Users\solan\Documents\Dev\lab\Blazor\Fast typing App\obj\Debug\net7.0\Fast typing App.csproj.AssemblyReference.cache
+C:\Users\solan\Documents\Dev\lab\Blazor\Fast typing App\obj\Debug\net7.0\Fast typing App.csproj.CopyComplete

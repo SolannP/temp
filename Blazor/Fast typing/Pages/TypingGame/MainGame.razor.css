@@ -1,0 +1,35 @@
+﻿.target_game {
+    border-style: solid; 
+    background-color: GhostWhite ;
+    margin: 10px;
+    border-top-width: 1px;
+    border-left-width: 1px;
+    border-right-width: 2px;
+    border-bottom-width: 2px;
+    padding: 2px;
+}
+
+.target_game--line_current {
+    font-style:italic;
+}
+
+.target_game--word {
+    display: inline;
+}
+
+.target_game--word_current {
+    font-weight: bold;
+}
+
+.target_game--char_current {
+   text-decoration: underline;
+}
+
+.target_game--char_succes {
+    color: green;
+}
+
+.target_game--char_error {
+    color: red;
+}
+

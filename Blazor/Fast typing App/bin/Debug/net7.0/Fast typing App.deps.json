@@ -1,0 +1,33 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v7.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v7.0": {
+      "Fast typing App/1.0.0": {
+        "runtime": {
+          "Fast typing App.dll": {}
+        }
+      },
+      "Fast typing Kernel/1.0.0": {
+        "runtime": {
+          "Fast typing Kernel.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Fast typing App/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Fast typing Kernel/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

@@ -1,0 +1,11 @@
+C:\Users\solan\Documents\Dev\lab\Blazor\FastTypingKernel\bin\Debug\net7.0\Fast typing Kernel.deps.json
+C:\Users\solan\Documents\Dev\lab\Blazor\FastTypingKernel\bin\Debug\net7.0\Fast typing Kernel.dll
+C:\Users\solan\Documents\Dev\lab\Blazor\FastTypingKernel\bin\Debug\net7.0\Fast typing Kernel.pdb
+C:\Users\solan\Documents\Dev\lab\Blazor\FastTypingKernel\obj\Debug\net7.0\Fast typing Kernel.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\solan\Documents\Dev\lab\Blazor\FastTypingKernel\obj\Debug\net7.0\Fast typing Kernel.AssemblyInfoInputs.cache
+C:\Users\solan\Documents\Dev\lab\Blazor\FastTypingKernel\obj\Debug\net7.0\Fast typing Kernel.AssemblyInfo.cs
+C:\Users\solan\Documents\Dev\lab\Blazor\FastTypingKernel\obj\Debug\net7.0\Fast typing Kernel.csproj.CoreCompileInputs.cache
+C:\Users\solan\Documents\Dev\lab\Blazor\FastTypingKernel\obj\Debug\net7.0\Fast typing Kernel.dll
+C:\Users\solan\Documents\Dev\lab\Blazor\FastTypingKernel\obj\Debug\net7.0\refint\Fast typing Kernel.dll
+C:\Users\solan\Documents\Dev\lab\Blazor\FastTypingKernel\obj\Debug\net7.0\Fast typing Kernel.pdb
+C:\Users\solan\Documents\Dev\lab\Blazor\FastTypingKernel\obj\Debug\net7.0\ref\Fast typing Kernel.dll
