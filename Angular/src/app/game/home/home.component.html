@@ -1,29 +1,15 @@
 <p>home works!</p>
-
-<h2>Nominatif</h2>
-<p>
-    Ich
-    Du
-    Er
-    Sie
-    Es
-    wir
-    Ihr
-    Sie
-    sie
-</p>
-<input id="myInput" placeholder="">
-
 <app-target-text 
-  [TargetText]="TargetText">
+  [TargetText]="TargetText"
+  (EventEmitterTEST)="DEBUG($event)">
 </app-target-text>
+<h2 style="color:green;display:inline;">{{correctStrokeCountor}}</h2>
+<h2 style="color:red;display:inline;">{{incorectStrokeCountor}}</h2>
+<h2 style="color:grey;display:inline;">{{strokeSpeedPercent}}ms/char</h2>
+<input type="range" min="0" max="100" [(ngModel)]="valueForGauge">
+<app-gauge [percentFill]="strokeSpeedPercent" [radius]="200"></app-gauge>
 <app-user-text 
-  
   [ExpectedInput]="TargetText"
-  (EventUserTypeText)="LogData($event)">
+  (GameDataEvent)="AAAAA($event)"
+  (RunningGameStatusEvent)="RunningGameStatus($event)">
 </app-user-text>
-<!--
- <expected>   </expected>
-<input-user></input-user>
-
--->

@@ -1,0 +1,30 @@
+<svg
+  [attr.height]="radius*2"
+  [attr.width]="radius*2">
+  <circle
+    class="gauge_base"
+    [attr.cx]="radius"
+    [attr.cy]="radius"
+    fill="transparent"
+    [attr.r]="innerRadius"
+    stroke="gray"
+    [attr.stroke-width]="strokeWidth"
+    [attr.stroke-dasharray]="dashArrayTrick"
+    [attr.transform]="rotation"
+    stroke-linecap="round"
+     />
+  <circle
+    class="gauge_indicator"
+    [attr.cx]="radius"
+    [attr.cy]="radius"
+    fill="transparent"
+    [attr.r]="innerRadius"
+    stroke="red"
+    [attr.stroke-width]="strokeWidth"
+    [attr.stroke-dasharray]="dashArrayTrick"
+    [attr.stroke-dashoffset]="arc-percentFill*arc/100"
+    [attr.transform]="rotation"
+    stroke-linecap="round"
+    />‍
+</svg>
+

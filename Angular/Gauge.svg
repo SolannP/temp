@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="200mm"
+   height="200mm"
+   viewBox="0 0 200 200"
+   version="1.1"
+   id="svg1"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1">
+    <linearGradient
+       id="linearGradient5">
+      <stop
+         style="stop-color:#2a5529;stop-opacity:1;"
+         offset="0.56562501"
+         id="stop7" />
+      <stop
+         style="stop-color:#000000;stop-opacity:0;"
+         offset="1"
+         id="stop8" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient5-1">
+      <stop
+         style="stop-color:#2e2955;stop-opacity:1;"
+         offset="0.75312501"
+         id="stop5" />
+      <stop
+         style="stop-color:#000000;stop-opacity:0;"
+         offset="0.9375"
+         id="stop6" />
+    </linearGradient>
+  </defs>
+  <g
+     id="layer1"
+     transform="matrix(5.1448522,0,0,5.1448522,-5.4696439,-19.96597)">
+    <path
+       style="fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#a8fc31;stroke-width:6.481;stroke-dasharray:none;stroke-opacity:1"
+       id="path9"
+       d="M 4.5601988,24.196352 A 16.105074,16.105074 0 0 1 9.2771902,12.759071" />
+    <path
+       style="fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#e7ea00;stroke-width:6.481;stroke-dasharray:none;stroke-opacity:1"
+       id="path9-3"
+       d="M 9.5008459,12.487627 A 16.105074,16.105074 0 0 1 20.993961,8.0625106" />
+    <path
+       style="fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#ff8308;stroke-width:6.481;stroke-dasharray:none;stroke-opacity:1"
+       id="path9-3-5"
+       d="m 21.318706,8.079755 a 16.105074,16.105074 0 0 1 10.548787,4.695186" />
+    <path
+       style="fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#ff5050;stroke-width:6.481;stroke-dasharray:none;stroke-opacity:1"
+       id="path9-3-5-6"
+       d="m 32.075929,12.926951 a 16.105074,16.105074 0 0 1 4.44073,11.104795" />
+    <g
+       id="gauge-indicator">
+      <path
+         style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.799999;stroke-dasharray:none;stroke-opacity:1"
+         d="m 20.800851,14.108404 -3.035664,10.585907 c 0,3.949082 5.841196,4.123797 5.841196,-0.01712 z"
+         id="path3" />
+      <ellipse
+         style="fill:#636363;fill-opacity:1;fill-rule:nonzero;stroke:#636363;stroke-width:1;stroke-dasharray:none;stroke-opacity:1"
+         id="path10"
+         cx="20.778244"
+         cy="24.938412"
+         rx="1.8313794"
+         ry="1.9218179" />
+      <ellipse
+         style="fill:#636363;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.379331;stroke-dasharray:none;stroke-opacity:1"
+         id="path10-5"
+         cx="20.806993"
+         cy="24.981642"
+         rx="0.69469827"
+         ry="0.72900432" />
+    </g>
+  </g>
+</svg>

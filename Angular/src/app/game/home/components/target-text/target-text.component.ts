@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 
 @Component({
   selector: 'app-target-text',
@@ -7,4 +7,10 @@ import { Component, Input } from '@angular/core';
 })
 export class TargetTextComponent {
   @Input() TargetText : string = "";
+
+  @Output() EventEmitterTEST : EventEmitter<string> = new EventEmitter<string>()
+  EMIT(){
+    console.warn("fuck");
+    this.EventEmitterTEST.emit("FUCK!")
+  }
 }
