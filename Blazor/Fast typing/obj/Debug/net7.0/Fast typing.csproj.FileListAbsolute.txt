@@ -35,3 +35,40 @@ C:\Users\solan\Documents\Dev\lab\Blazor\Fast typing\bin\Debug\net7.0\Newtonsoft.
 C:\Users\solan\Documents\Dev\lab\Blazor\Fast typing\bin\Debug\net7.0\Fast typing Kernel.dll
 C:\Users\solan\Documents\Dev\lab\Blazor\Fast typing\bin\Debug\net7.0\Fast typing Kernel.pdb
 C:\Users\solan\Documents\Dev\lab\Blazor\Fast typing\obj\Debug\net7.0\Fast typing.csproj.CopyComplete
+D:\01_Projet\10_German-speed-game\repo\Blazor\Fast typing\bin\Debug\net7.0\appsettings.Development.json
+D:\01_Projet\10_German-speed-game\repo\Blazor\Fast typing\bin\Debug\net7.0\appsettings.json
+D:\01_Projet\10_German-speed-game\repo\Blazor\Fast typing\bin\Debug\net7.0\Fast typing.staticwebassets.runtime.json
+D:\01_Projet\10_German-speed-game\repo\Blazor\Fast typing\bin\Debug\net7.0\Fast typing.exe
+D:\01_Projet\10_German-speed-game\repo\Blazor\Fast typing\bin\Debug\net7.0\Fast typing.deps.json
+D:\01_Projet\10_German-speed-game\repo\Blazor\Fast typing\bin\Debug\net7.0\Fast typing.runtimeconfig.json
+D:\01_Projet\10_German-speed-game\repo\Blazor\Fast typing\bin\Debug\net7.0\Fast typing.dll
+D:\01_Projet\10_German-speed-game\repo\Blazor\Fast typing\bin\Debug\net7.0\Fast typing.pdb
+D:\01_Projet\10_German-speed-game\repo\Blazor\Fast typing\bin\Debug\net7.0\Newtonsoft.Json.dll
+D:\01_Projet\10_German-speed-game\repo\Blazor\Fast typing\bin\Debug\net7.0\Fast typing Kernel.dll
+D:\01_Projet\10_German-speed-game\repo\Blazor\Fast typing\bin\Debug\net7.0\Fast typing Kernel.pdb
+D:\01_Projet\10_German-speed-game\repo\Blazor\Fast typing\obj\Debug\net7.0\Fast typing.csproj.AssemblyReference.cache
+D:\01_Projet\10_German-speed-game\repo\Blazor\Fast typing\obj\Debug\net7.0\Fast typing.GeneratedMSBuildEditorConfig.editorconfig
+D:\01_Projet\10_German-speed-game\repo\Blazor\Fast typing\obj\Debug\net7.0\Fast typing.AssemblyInfoInputs.cache
+D:\01_Projet\10_German-speed-game\repo\Blazor\Fast typing\obj\Debug\net7.0\Fast typing.AssemblyInfo.cs
+D:\01_Projet\10_German-speed-game\repo\Blazor\Fast typing\obj\Debug\net7.0\Fast typing.csproj.CoreCompileInputs.cache
+D:\01_Projet\10_German-speed-game\repo\Blazor\Fast typing\obj\Debug\net7.0\Fast typing.MvcApplicationPartsAssemblyInfo.cache
+D:\01_Projet\10_German-speed-game\repo\Blazor\Fast typing\obj\Debug\net7.0\Fast typing.RazorAssemblyInfo.cache
+D:\01_Projet\10_German-speed-game\repo\Blazor\Fast typing\obj\Debug\net7.0\Fast typing.RazorAssemblyInfo.cs
+D:\01_Projet\10_German-speed-game\repo\Blazor\Fast typing\obj\Debug\net7.0\staticwebassets\msbuild.Fast typing.Microsoft.AspNetCore.StaticWebAssets.props
+D:\01_Projet\10_German-speed-game\repo\Blazor\Fast typing\obj\Debug\net7.0\staticwebassets\msbuild.build.Fast typing.props
+D:\01_Projet\10_German-speed-game\repo\Blazor\Fast typing\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.Fast typing.props
+D:\01_Projet\10_German-speed-game\repo\Blazor\Fast typing\obj\Debug\net7.0\staticwebassets\msbuild.buildTransitive.Fast typing.props
+D:\01_Projet\10_German-speed-game\repo\Blazor\Fast typing\obj\Debug\net7.0\staticwebassets.pack.json
+D:\01_Projet\10_German-speed-game\repo\Blazor\Fast typing\obj\Debug\net7.0\staticwebassets.build.json
+D:\01_Projet\10_German-speed-game\repo\Blazor\Fast typing\obj\Debug\net7.0\staticwebassets.development.json
+D:\01_Projet\10_German-speed-game\repo\Blazor\Fast typing\obj\Debug\net7.0\scopedcss\Pages\TypingGame\MainGame.razor.rz.scp.css
+D:\01_Projet\10_German-speed-game\repo\Blazor\Fast typing\obj\Debug\net7.0\scopedcss\Shared\MainLayout.razor.rz.scp.css
+D:\01_Projet\10_German-speed-game\repo\Blazor\Fast typing\obj\Debug\net7.0\scopedcss\Shared\NavMenu.razor.rz.scp.css
+D:\01_Projet\10_German-speed-game\repo\Blazor\Fast typing\obj\Debug\net7.0\scopedcss\bundle\Fast typing.styles.css
+D:\01_Projet\10_German-speed-game\repo\Blazor\Fast typing\obj\Debug\net7.0\scopedcss\projectbundle\Fast typing.bundle.scp.css
+D:\01_Projet\10_German-speed-game\repo\Blazor\Fast typing\obj\Debug\net7.0\Fast typing.csproj.CopyComplete
+D:\01_Projet\10_German-speed-game\repo\Blazor\Fast typing\obj\Debug\net7.0\Fast typing.dll
+D:\01_Projet\10_German-speed-game\repo\Blazor\Fast typing\obj\Debug\net7.0\refint\Fast typing.dll
+D:\01_Projet\10_German-speed-game\repo\Blazor\Fast typing\obj\Debug\net7.0\Fast typing.pdb
+D:\01_Projet\10_German-speed-game\repo\Blazor\Fast typing\obj\Debug\net7.0\Fast typing.genruntimeconfig.cache
+D:\01_Projet\10_German-speed-game\repo\Blazor\Fast typing\obj\Debug\net7.0\ref\Fast typing.dll

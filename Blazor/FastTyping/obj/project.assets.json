@@ -5545,19 +5545,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\solan\\.nuget\\packages\\": {}
+    "C:\\Users\\solan\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\solan\\Documents\\Dev\\lab\\Blazor\\FastTyping\\Fast typing Test.csproj",
+      "projectUniqueName": "D:\\01_Projet\\10_German-speed-game\\repo\\Blazor\\FastTyping\\Fast typing Test.csproj",
       "projectName": "Fast typing Test",
-      "projectPath": "C:\\Users\\solan\\Documents\\Dev\\lab\\Blazor\\FastTyping\\Fast typing Test.csproj",
+      "projectPath": "D:\\01_Projet\\10_German-speed-game\\repo\\Blazor\\FastTyping\\Fast typing Test.csproj",
       "packagesPath": "C:\\Users\\solan\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\solan\\Documents\\Dev\\lab\\Blazor\\FastTyping\\obj\\",
+      "outputPath": "D:\\01_Projet\\10_German-speed-game\\repo\\Blazor\\FastTyping\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
         "C:\\Users\\solan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -5571,8 +5576,8 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\Users\\solan\\Documents\\Dev\\lab\\Blazor\\Fast typing App\\Fast typing App.csproj": {
-              "projectPath": "C:\\Users\\solan\\Documents\\Dev\\lab\\Blazor\\Fast typing App\\Fast typing App.csproj"
+            "D:\\01_Projet\\10_German-speed-game\\repo\\Blazor\\Fast typing App\\Fast typing App.csproj": {
+              "projectPath": "D:\\01_Projet\\10_German-speed-game\\repo\\Blazor\\Fast typing App\\Fast typing App.csproj"
             }
           }
         }
@@ -5624,7 +5629,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.402\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
       }
     }
   }

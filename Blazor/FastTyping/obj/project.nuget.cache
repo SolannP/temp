@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "5D8kPWHSzblpoJ6y9EV3GJdR7G4S0gf6ysNQ2OdG5SN7CGv6z3MOXanSCECXvbFwkMtebHYV9aIJCH9MG92cnQ==",
+  "dgSpecHash": "ZMH8wuGBdSWeicEz0wlHv3x8I/3oGOB3QHNrjFj4DX5+nmDKNE+OioUe8tJgwwMbgDm0fQD5MllYN6Rmxm/9oQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\solan\\Documents\\Dev\\lab\\Blazor\\FastTyping\\Fast typing Test.csproj",
+  "projectFilePath": "D:\\01_Projet\\10_German-speed-game\\repo\\Blazor\\FastTyping\\Fast typing Test.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\solan\\.nuget\\packages\\coverlet.collector\\3.2.0\\coverlet.collector.3.2.0.nupkg.sha512",
     "C:\\Users\\solan\\.nuget\\packages\\microsoft.codecoverage\\17.7.1\\microsoft.codecoverage.17.7.1.nupkg.sha512",

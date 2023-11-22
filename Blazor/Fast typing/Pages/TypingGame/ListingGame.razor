@@ -1,0 +1,62 @@
+﻿@page "/list"
+@using FastTypingKernel;
+@using Fast_typing.Data;
+@inject AppService appService;
+
+<h3>ListingGame</h3>
+
+@if(data is null)
+{
+    <div class="spinner-border" role="status">
+        <span class="visually-hidden">Loading...</span>
+    </div>
+}
+else{
+
+    <table class="table table-sms">
+        <thead>
+            <tr>
+                <th scope="col">Titre</th>
+                <th scope="col">Tag </th>
+                <th scope="col">Categories</th>
+                <th scope="col">Acces</th>
+            </tr>
+        </thead>
+        <tbody>
+                @foreach (var game in data.all_texts)
+                {
+                    <tr>
+
+                        <th scope="row">@game.title</th>
+                        <td>
+                            @foreach (var tag in game.tags)
+                            {
+                            <span class="badge rounded-pill bg-warning">@tag.text</span>
+                            }
+                        </td>
+                        <td>
+                            @foreach (var cat in game.categories)
+                            {
+                                <span class="badge bg-primary">@cat.text</span>
+                            }
+                        </td>
+                        <td>
+                        <span class="badge rounded-pill bg-success rounded-circle">
+                            <a href="/game/@game.id_text" class="url-action"><span class="oi oi-share-boxed"></span></a>
+                        </span>
+                        </td>
+                    </tr>
+                }
+        
+        </tbody>
+    </table>
+}
+@code {
+    public TargetTextData data;
+
+    protected override async Task OnInitializedAsync()
+    {
+        this.data = await appService.GetCommonAppDataAsync();
+        
+    }
+}

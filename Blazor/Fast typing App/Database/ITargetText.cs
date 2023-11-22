@@ -9,5 +9,7 @@ namespace Fast_typing_App.Database
     public interface ITargetText
     {
         public Task<T> GetObjectAsync<T>(string id);
+        public Task<bool> CreateForceObjectAsync<T>(string id, T value);
     }
+    
 }

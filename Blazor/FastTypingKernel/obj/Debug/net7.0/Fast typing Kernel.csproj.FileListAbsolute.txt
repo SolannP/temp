@@ -9,3 +9,15 @@ C:\Users\solan\Documents\Dev\lab\Blazor\FastTypingKernel\obj\Debug\net7.0\Fast t
 C:\Users\solan\Documents\Dev\lab\Blazor\FastTypingKernel\obj\Debug\net7.0\refint\Fast typing Kernel.dll
 C:\Users\solan\Documents\Dev\lab\Blazor\FastTypingKernel\obj\Debug\net7.0\Fast typing Kernel.pdb
 C:\Users\solan\Documents\Dev\lab\Blazor\FastTypingKernel\obj\Debug\net7.0\ref\Fast typing Kernel.dll
+D:\01_Projet\10_German-speed-game\repo\Blazor\FastTypingKernel\bin\Debug\net7.0\Fast typing Kernel.deps.json
+D:\01_Projet\10_German-speed-game\repo\Blazor\FastTypingKernel\bin\Debug\net7.0\Fast typing Kernel.dll
+D:\01_Projet\10_German-speed-game\repo\Blazor\FastTypingKernel\bin\Debug\net7.0\Fast typing Kernel.pdb
+D:\01_Projet\10_German-speed-game\repo\Blazor\FastTypingKernel\obj\Debug\net7.0\Fast typing Kernel.csproj.AssemblyReference.cache
+D:\01_Projet\10_German-speed-game\repo\Blazor\FastTypingKernel\obj\Debug\net7.0\Fast typing Kernel.GeneratedMSBuildEditorConfig.editorconfig
+D:\01_Projet\10_German-speed-game\repo\Blazor\FastTypingKernel\obj\Debug\net7.0\Fast typing Kernel.AssemblyInfoInputs.cache
+D:\01_Projet\10_German-speed-game\repo\Blazor\FastTypingKernel\obj\Debug\net7.0\Fast typing Kernel.AssemblyInfo.cs
+D:\01_Projet\10_German-speed-game\repo\Blazor\FastTypingKernel\obj\Debug\net7.0\Fast typing Kernel.csproj.CoreCompileInputs.cache
+D:\01_Projet\10_German-speed-game\repo\Blazor\FastTypingKernel\obj\Debug\net7.0\Fast typing Kernel.dll
+D:\01_Projet\10_German-speed-game\repo\Blazor\FastTypingKernel\obj\Debug\net7.0\refint\Fast typing Kernel.dll
+D:\01_Projet\10_German-speed-game\repo\Blazor\FastTypingKernel\obj\Debug\net7.0\Fast typing Kernel.pdb
+D:\01_Projet\10_German-speed-game\repo\Blazor\FastTypingKernel\obj\Debug\net7.0\ref\Fast typing Kernel.dll

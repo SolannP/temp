@@ -35,3 +35,40 @@ C:\Users\solan\Documents\Dev\lab\Blazor\Back fast typing\bin\Debug\net7.0\Fast t
 C:\Users\solan\Documents\Dev\lab\Blazor\Back fast typing\bin\Debug\net7.0\Fast typing App.pdb
 C:\Users\solan\Documents\Dev\lab\Blazor\Back fast typing\bin\Debug\net7.0\Fast typing Kernel.dll
 C:\Users\solan\Documents\Dev\lab\Blazor\Back fast typing\bin\Debug\net7.0\Fast typing Kernel.pdb
+D:\01_Projet\10_German-speed-game\repo\Blazor\Back fast typing\bin\Debug\net7.0\appsettings.Development.json
+D:\01_Projet\10_German-speed-game\repo\Blazor\Back fast typing\bin\Debug\net7.0\appsettings.json
+D:\01_Projet\10_German-speed-game\repo\Blazor\Back fast typing\bin\Debug\net7.0\Back fast typing.exe
+D:\01_Projet\10_German-speed-game\repo\Blazor\Back fast typing\bin\Debug\net7.0\Back fast typing.deps.json
+D:\01_Projet\10_German-speed-game\repo\Blazor\Back fast typing\bin\Debug\net7.0\Back fast typing.runtimeconfig.json
+D:\01_Projet\10_German-speed-game\repo\Blazor\Back fast typing\bin\Debug\net7.0\Back fast typing.dll
+D:\01_Projet\10_German-speed-game\repo\Blazor\Back fast typing\bin\Debug\net7.0\Back fast typing.pdb
+D:\01_Projet\10_German-speed-game\repo\Blazor\Back fast typing\bin\Debug\net7.0\Microsoft.AspNetCore.OpenApi.dll
+D:\01_Projet\10_German-speed-game\repo\Blazor\Back fast typing\bin\Debug\net7.0\Microsoft.OpenApi.dll
+D:\01_Projet\10_German-speed-game\repo\Blazor\Back fast typing\bin\Debug\net7.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\01_Projet\10_German-speed-game\repo\Blazor\Back fast typing\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\01_Projet\10_German-speed-game\repo\Blazor\Back fast typing\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\01_Projet\10_German-speed-game\repo\Blazor\Back fast typing\bin\Debug\net7.0\Fast typing App.dll
+D:\01_Projet\10_German-speed-game\repo\Blazor\Back fast typing\bin\Debug\net7.0\Fast typing Kernel.dll
+D:\01_Projet\10_German-speed-game\repo\Blazor\Back fast typing\bin\Debug\net7.0\Fast typing App.pdb
+D:\01_Projet\10_German-speed-game\repo\Blazor\Back fast typing\bin\Debug\net7.0\Fast typing Kernel.pdb
+D:\01_Projet\10_German-speed-game\repo\Blazor\Back fast typing\obj\Debug\net7.0\Back fast typing.csproj.AssemblyReference.cache
+D:\01_Projet\10_German-speed-game\repo\Blazor\Back fast typing\obj\Debug\net7.0\Back fast typing.GeneratedMSBuildEditorConfig.editorconfig
+D:\01_Projet\10_German-speed-game\repo\Blazor\Back fast typing\obj\Debug\net7.0\Back fast typing.AssemblyInfoInputs.cache
+D:\01_Projet\10_German-speed-game\repo\Blazor\Back fast typing\obj\Debug\net7.0\Back fast typing.AssemblyInfo.cs
+D:\01_Projet\10_German-speed-game\repo\Blazor\Back fast typing\obj\Debug\net7.0\Back fast typing.csproj.CoreCompileInputs.cache
+D:\01_Projet\10_German-speed-game\repo\Blazor\Back fast typing\obj\Debug\net7.0\Back fast typing.MvcApplicationPartsAssemblyInfo.cs
+D:\01_Projet\10_German-speed-game\repo\Blazor\Back fast typing\obj\Debug\net7.0\Back fast typing.MvcApplicationPartsAssemblyInfo.cache
+D:\01_Projet\10_German-speed-game\repo\Blazor\Back fast typing\obj\Debug\net7.0\staticwebassets\msbuild.Back fast typing.Microsoft.AspNetCore.StaticWebAssets.props
+D:\01_Projet\10_German-speed-game\repo\Blazor\Back fast typing\obj\Debug\net7.0\staticwebassets\msbuild.build.Back fast typing.props
+D:\01_Projet\10_German-speed-game\repo\Blazor\Back fast typing\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.Back fast typing.props
+D:\01_Projet\10_German-speed-game\repo\Blazor\Back fast typing\obj\Debug\net7.0\staticwebassets\msbuild.buildTransitive.Back fast typing.props
+D:\01_Projet\10_German-speed-game\repo\Blazor\Back fast typing\obj\Debug\net7.0\staticwebassets.pack.json
+D:\01_Projet\10_German-speed-game\repo\Blazor\Back fast typing\obj\Debug\net7.0\staticwebassets.build.json
+D:\01_Projet\10_German-speed-game\repo\Blazor\Back fast typing\obj\Debug\net7.0\staticwebassets.development.json
+D:\01_Projet\10_German-speed-game\repo\Blazor\Back fast typing\obj\Debug\net7.0\scopedcss\bundle\Back fast typing.styles.css
+D:\01_Projet\10_German-speed-game\repo\Blazor\Back fast typing\obj\Debug\net7.0\Back fast typing.csproj.CopyComplete
+D:\01_Projet\10_German-speed-game\repo\Blazor\Back fast typing\obj\Debug\net7.0\Back fast typing.dll
+D:\01_Projet\10_German-speed-game\repo\Blazor\Back fast typing\obj\Debug\net7.0\refint\Back fast typing.dll
+D:\01_Projet\10_German-speed-game\repo\Blazor\Back fast typing\obj\Debug\net7.0\Back fast typing.pdb
+D:\01_Projet\10_German-speed-game\repo\Blazor\Back fast typing\obj\Debug\net7.0\Back fast typing.genruntimeconfig.cache
+D:\01_Projet\10_German-speed-game\repo\Blazor\Back fast typing\obj\Debug\net7.0\ref\Back fast typing.dll

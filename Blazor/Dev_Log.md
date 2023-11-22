@@ -19,6 +19,13 @@ date        ; début  ; fin   ; total ; comment ;
 2023/11/18  ; 07h46  ; 08h46 ; 1h00 ; data schema for basic WS (target text);
 2023/11/19  ; 07h45  ; 08h45 ; 1h00 ; basic back arch and file/json handling in C#;
 2023/11/19  ; 14h25  ; 15h37 ; 1h10 ; add difficulty change (increase/dicrease) on click
+2023/11/21  ; 10h00  ; 12h00 ; 2h00 ; database initialised using file 
+2023/11/21  ; 12h30  ; 14h00 ; 1h30 ; change schema and add basic list of game
+2023/11/22  ; 11h15  ; 12h15 ; 1h00 ; page navigation possibilities
+2023/11/22  ; 15h45  ; __h__ ; _h__ ; 
+
+
+/14
 
 =====================================================
 Make a game for speed typing with german declinaison. 
@@ -231,7 +238,7 @@ GET https://current-serv/constante
   "texts" : [ 
     { 
 	  "id": "id_text",
-	  "title" : ""
+	  "title" : "",
 	},
 	{ 
       "id": "id_text",
@@ -285,4 +292,133 @@ Nice separation of consernce is really great, I know were to put logic and I thi
 
 Very fast way to add service into blazor (like second, when generated using postman ..)
 Could be greate to make like postman for test but in the same wen navigator + export into rest sharp or http call or blazor service.
+
+# Day 14 - 2023/11/21 
+
+Connecting to Gitlab was a pain while working in a moving location, i.e. a train, have to wait 5 seconds for each email because of checking network + email code check every time.
+Github is better for now while the bare metal server is not ready for propose repository hebergement.
+While loading all data from another pc, I have to re-make the data file..  two possibility : add data into repo for the moment or generate in a raw.
+
+What a surprise, make test file location independent of the computer (proper way to initialise file + test for read and update) take a lot of time (almost 2 hours).  
+Have to do unit test to be sure that file connecteur was not responsible of the error.  
+
+It turn up that the controller having ref to app was not static thus construct and destruct every time an end point/controller is call => static make it work (incoming perf issues).
+
+
+_To verify if it was a good idea: if possible, a field that can be move in the superior hierarchy (name in student better in human) must be move ?_
+_To verify if it was a good idea: string as object allow better extend latter (add img, link, url, color ...)_
+
+We can add pagination to the api with common data but another end point could be usefull to.. 
+
+Must update as bellow : 
+GET https://current-serv/constante
+{
+  "all_texts" : [ 
+    { 
+	  "id": "id_text",
+	  "title" : "",
+	  "categories" : [ {
+          "name" : "Entrainement sur verbe",
+	      "id" : "klm"
+	     },
+	     {
+	       "name" : "BB",
+	       "id" : "nbv"
+	  }],
+      "tags": [ {"text":"a"}, {"text":"b"}]
+	}],
+  "all_tags" : [ {"text":"Verbes"},{"text":"Irregular Verbes",{"text":"Regular verbes"}]
+  "all_categories" : [ "", "" ],
+}
+
+and 
+
+GET : https://current-serv/text/{id_text}
+{ 
+  "id_text" : "",
+  "title" : "",
+  "difficulties" : [
+    {  
+	  "title" : "easy",
+	  "level" : 0,
+	  "text" : "string text"
+	  ?current_score: [...]
+	},
+	{
+	  "title" : "medium",
+	  "level" : 1,
+	  "text" : "string text"
+	  ?current_score: [...]
+	},
+	{
+	  "title" : "hard",
+	  "level" : 2,
+	  "text_url" : "string text"
+	  ?current_score: [...]
+	}]
+}
+
+
+# Day 15 - 2023/11/22
+
+If add Route parameter using blazor (easy and great !).  Within one hour a was able to add routing to text and fullfill the list of game possibilities.  
+Work with bootstrape (rounded) + css particularity ( .class + a.class for overide a)  
+Optionnal querry can be used for level.  
+Worth to read the doc, some tutorial/docs are not the art of work specialy regarding query parameter.  
+Some people made complicated and ugly work around but it turn up, when reading doc, that the attribut `[Parameter] + [SupplyParameterFromQuery(Name = "level")]` work perfectly  
+
+Made custom index for the data is a bad idea if simultaneous update : it will lock the file when create new but for now that fine (no update scheduled)
+I will add EF for database rather than file. In addition it will improve my understanding of all EF stuff (not now however)
+
+must add categorie and tag ..
+
+GET : https://current-serv/text/{id_text}
+{ 
+  "id_text" : "",
+  "title" : "",
+  "difficulties" : [
+    {  
+	  "title" : "easy",
+	  "level" : 0,
+	  "text" : "string text"
+	  ?current_score: [...]
+	},
+	{
+	  "title" : "medium",
+	  "level" : 1,
+	  "text" : "string text"
+	  ?current_score: [...]
+	},
+	{
+	  "title" : "hard",
+	  "level" : 2,
+	  "text_url" : "string text"
+	  ?current_score: [...]
+	}],
+	"categories" : [ {
+          "name" : "Entrainement sur verbe",
+		  "id":"guid"
+	     },
+	     {
+	       "name" : "BB","id":"guid"
+		   }
+	  }],
+    "tags": [ {"text":"a"}, {"text":"b"}]
+}
+
+
+Intersting possibilities for IEnumerable : 
+  - Array : size defined when object instantiated (can be anonymous)
+    - single dimensional: int[] array = new int[5];
+    - Multidimensional : int[,] array2DDeclaration = new int[4, 2];
+    - jagged null until init : int[][] arr = new int[2][]; int[][] jaggedArray2 = [[1, 3, 5, 7, 9],[0, 2, 4, 6],[11, 22]];
+  - HashSet{Sorted} (does not have Select but usefull join/merge methods)
+  - List{Sorted (with Icomparer)}
+  - LinkedList (Add with O(1) compared to Array or List which are O(n))
+  - {Sorted}Dictionary (concurent)
+  - Queue / Stack
+  - {ReadOnly}List/Dictionary : propose immutable collection
+  
+TODO: change url name  
+
 

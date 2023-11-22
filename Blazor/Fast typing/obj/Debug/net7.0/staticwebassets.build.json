@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "u9CJjVUpFPGdw5SiTQzzPnJ9uhkRWnJQh2522IyuI3M=",
+  "Hash": "Roj3y+al3O+hnjEs/tFYGczszA4rI9Qm0HHnUBObM/c=",
   "Source": "Fast typing",
   "BasePath": "_content/Fast typing",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "Fast typing\\wwwroot",
       "Source": "Fast typing",
-      "ContentRoot": "C:\\Users\\solan\\Documents\\Dev\\lab\\Blazor\\Fast typing\\wwwroot\\",
+      "ContentRoot": "D:\\01_Projet\\10_German-speed-game\\repo\\Blazor\\Fast typing\\wwwroot\\",
       "BasePath": "_content/Fast typing",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\solan\\Documents\\Dev\\lab\\Blazor\\Fast typing\\obj\\Debug\\net7.0\\scopedcss\\bundle\\Fast typing.styles.css",
+      "Identity": "D:\\01_Projet\\10_German-speed-game\\repo\\Blazor\\Fast typing\\obj\\Debug\\net7.0\\scopedcss\\bundle\\Fast typing.styles.css",
       "SourceId": "Fast typing",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\solan\\Documents\\Dev\\lab\\Blazor\\Fast typing\\obj\\Debug\\net7.0\\scopedcss\\bundle\\",
+      "ContentRoot": "D:\\01_Projet\\10_German-speed-game\\repo\\Blazor\\Fast typing\\obj\\Debug\\net7.0\\scopedcss\\bundle\\",
       "BasePath": "_content/Fast typing",
       "RelativePath": "Fast typing.styles.css",
       "AssetKind": "All",
@@ -31,13 +31,13 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\solan\\Documents\\Dev\\lab\\Blazor\\Fast typing\\obj\\Debug\\net7.0\\scopedcss\\bundle\\Fast typing.styles.css"
+      "OriginalItemSpec": "D:\\01_Projet\\10_German-speed-game\\repo\\Blazor\\Fast typing\\obj\\Debug\\net7.0\\scopedcss\\bundle\\Fast typing.styles.css"
     },
     {
-      "Identity": "C:\\Users\\solan\\Documents\\Dev\\lab\\Blazor\\Fast typing\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\Fast typing.bundle.scp.css",
+      "Identity": "D:\\01_Projet\\10_German-speed-game\\repo\\Blazor\\Fast typing\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\Fast typing.bundle.scp.css",
       "SourceId": "Fast typing",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\solan\\Documents\\Dev\\lab\\Blazor\\Fast typing\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\",
+      "ContentRoot": "D:\\01_Projet\\10_German-speed-game\\repo\\Blazor\\Fast typing\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\",
       "BasePath": "_content/Fast typing",
       "RelativePath": "Fast typing.bundle.scp.css",
       "AssetKind": "All",
@@ -48,13 +48,13 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\solan\\Documents\\Dev\\lab\\Blazor\\Fast typing\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\Fast typing.bundle.scp.css"
+      "OriginalItemSpec": "D:\\01_Projet\\10_German-speed-game\\repo\\Blazor\\Fast typing\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\Fast typing.bundle.scp.css"
     },
     {
-      "Identity": "C:\\Users\\solan\\Documents\\Dev\\lab\\Blazor\\Fast typing\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+      "Identity": "D:\\01_Projet\\10_German-speed-game\\repo\\Blazor\\Fast typing\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
       "SourceId": "Fast typing",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\solan\\Documents\\Dev\\lab\\Blazor\\Fast typing\\wwwroot\\",
+      "ContentRoot": "D:\\01_Projet\\10_German-speed-game\\repo\\Blazor\\Fast typing\\wwwroot\\",
       "BasePath": "_content/Fast typing",
       "RelativePath": "css/bootstrap/bootstrap.min.css",
       "AssetKind": "All",
@@ -68,10 +68,10 @@
       "OriginalItemSpec": "wwwroot\\css\\bootstrap\\bootstrap.min.css"
     },
     {
-      "Identity": "C:\\Users\\solan\\Documents\\Dev\\lab\\Blazor\\Fast typing\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+      "Identity": "D:\\01_Projet\\10_German-speed-game\\repo\\Blazor\\Fast typing\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
       "SourceId": "Fast typing",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\solan\\Documents\\Dev\\lab\\Blazor\\Fast typing\\wwwroot\\",
+      "ContentRoot": "D:\\01_Projet\\10_German-speed-game\\repo\\Blazor\\Fast typing\\wwwroot\\",
       "BasePath": "_content/Fast typing",
       "RelativePath": "css/bootstrap/bootstrap.min.css.map",
       "AssetKind": "All",
@@ -85,10 +85,10 @@
       "OriginalItemSpec": "wwwroot\\css\\bootstrap\\bootstrap.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\solan\\Documents\\Dev\\lab\\Blazor\\Fast typing\\wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css",
+      "Identity": "D:\\01_Projet\\10_German-speed-game\\repo\\Blazor\\Fast typing\\wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css",
       "SourceId": "Fast typing",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\solan\\Documents\\Dev\\lab\\Blazor\\Fast typing\\wwwroot\\",
+      "ContentRoot": "D:\\01_Projet\\10_German-speed-game\\repo\\Blazor\\Fast typing\\wwwroot\\",
       "BasePath": "_content/Fast typing",
       "RelativePath": "css/open-iconic/font/css/open-iconic-bootstrap.min.css",
       "AssetKind": "All",
@@ -102,10 +102,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css"
     },
     {
-      "Identity": "C:\\Users\\solan\\Documents\\Dev\\lab\\Blazor\\Fast typing\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.eot",
+      "Identity": "D:\\01_Projet\\10_German-speed-game\\repo\\Blazor\\Fast typing\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.eot",
       "SourceId": "Fast typing",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\solan\\Documents\\Dev\\lab\\Blazor\\Fast typing\\wwwroot\\",
+      "ContentRoot": "D:\\01_Projet\\10_German-speed-game\\repo\\Blazor\\Fast typing\\wwwroot\\",
       "BasePath": "_content/Fast typing",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.eot",
       "AssetKind": "All",
@@ -119,10 +119,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.eot"
     },
     {
-      "Identity": "C:\\Users\\solan\\Documents\\Dev\\lab\\Blazor\\Fast typing\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.otf",
+      "Identity": "D:\\01_Projet\\10_German-speed-game\\repo\\Blazor\\Fast typing\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.otf",
       "SourceId": "Fast typing",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\solan\\Documents\\Dev\\lab\\Blazor\\Fast typing\\wwwroot\\",
+      "ContentRoot": "D:\\01_Projet\\10_German-speed-game\\repo\\Blazor\\Fast typing\\wwwroot\\",
       "BasePath": "_content/Fast typing",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.otf",
       "AssetKind": "All",
@@ -136,10 +136,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.otf"
     },
     {
-      "Identity": "C:\\Users\\solan\\Documents\\Dev\\lab\\Blazor\\Fast typing\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.svg",
+      "Identity": "D:\\01_Projet\\10_German-speed-game\\repo\\Blazor\\Fast typing\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.svg",
       "SourceId": "Fast typing",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\solan\\Documents\\Dev\\lab\\Blazor\\Fast typing\\wwwroot\\",
+      "ContentRoot": "D:\\01_Projet\\10_German-speed-game\\repo\\Blazor\\Fast typing\\wwwroot\\",
       "BasePath": "_content/Fast typing",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.svg",
       "AssetKind": "All",
@@ -153,10 +153,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.svg"
     },
     {
-      "Identity": "C:\\Users\\solan\\Documents\\Dev\\lab\\Blazor\\Fast typing\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.ttf",
+      "Identity": "D:\\01_Projet\\10_German-speed-game\\repo\\Blazor\\Fast typing\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.ttf",
       "SourceId": "Fast typing",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\solan\\Documents\\Dev\\lab\\Blazor\\Fast typing\\wwwroot\\",
+      "ContentRoot": "D:\\01_Projet\\10_German-speed-game\\repo\\Blazor\\Fast typing\\wwwroot\\",
       "BasePath": "_content/Fast typing",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.ttf",
       "AssetKind": "All",
@@ -170,10 +170,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.ttf"
     },
     {
-      "Identity": "C:\\Users\\solan\\Documents\\Dev\\lab\\Blazor\\Fast typing\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff",
+      "Identity": "D:\\01_Projet\\10_German-speed-game\\repo\\Blazor\\Fast typing\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff",
       "SourceId": "Fast typing",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\solan\\Documents\\Dev\\lab\\Blazor\\Fast typing\\wwwroot\\",
+      "ContentRoot": "D:\\01_Projet\\10_German-speed-game\\repo\\Blazor\\Fast typing\\wwwroot\\",
       "BasePath": "_content/Fast typing",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.woff",
       "AssetKind": "All",
@@ -187,10 +187,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff"
     },
     {
-      "Identity": "C:\\Users\\solan\\Documents\\Dev\\lab\\Blazor\\Fast typing\\wwwroot\\css\\open-iconic\\FONT-LICENSE",
+      "Identity": "D:\\01_Projet\\10_German-speed-game\\repo\\Blazor\\Fast typing\\wwwroot\\css\\open-iconic\\FONT-LICENSE",
       "SourceId": "Fast typing",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\solan\\Documents\\Dev\\lab\\Blazor\\Fast typing\\wwwroot\\",
+      "ContentRoot": "D:\\01_Projet\\10_German-speed-game\\repo\\Blazor\\Fast typing\\wwwroot\\",
       "BasePath": "_content/Fast typing",
       "RelativePath": "css/open-iconic/FONT-LICENSE",
       "AssetKind": "All",
@@ -204,10 +204,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\FONT-LICENSE"
     },
     {
-      "Identity": "C:\\Users\\solan\\Documents\\Dev\\lab\\Blazor\\Fast typing\\wwwroot\\css\\open-iconic\\ICON-LICENSE",
+      "Identity": "D:\\01_Projet\\10_German-speed-game\\repo\\Blazor\\Fast typing\\wwwroot\\css\\open-iconic\\ICON-LICENSE",
       "SourceId": "Fast typing",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\solan\\Documents\\Dev\\lab\\Blazor\\Fast typing\\wwwroot\\",
+      "ContentRoot": "D:\\01_Projet\\10_German-speed-game\\repo\\Blazor\\Fast typing\\wwwroot\\",
       "BasePath": "_content/Fast typing",
       "RelativePath": "css/open-iconic/ICON-LICENSE",
       "AssetKind": "All",
@@ -221,10 +221,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\ICON-LICENSE"
     },
     {
-      "Identity": "C:\\Users\\solan\\Documents\\Dev\\lab\\Blazor\\Fast typing\\wwwroot\\css\\open-iconic\\README.md",
+      "Identity": "D:\\01_Projet\\10_German-speed-game\\repo\\Blazor\\Fast typing\\wwwroot\\css\\open-iconic\\README.md",
       "SourceId": "Fast typing",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\solan\\Documents\\Dev\\lab\\Blazor\\Fast typing\\wwwroot\\",
+      "ContentRoot": "D:\\01_Projet\\10_German-speed-game\\repo\\Blazor\\Fast typing\\wwwroot\\",
       "BasePath": "_content/Fast typing",
       "RelativePath": "css/open-iconic/README.md",
       "AssetKind": "All",
@@ -238,10 +238,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\README.md"
     },
     {
-      "Identity": "C:\\Users\\solan\\Documents\\Dev\\lab\\Blazor\\Fast typing\\wwwroot\\css\\site.css",
+      "Identity": "D:\\01_Projet\\10_German-speed-game\\repo\\Blazor\\Fast typing\\wwwroot\\css\\site.css",
       "SourceId": "Fast typing",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\solan\\Documents\\Dev\\lab\\Blazor\\Fast typing\\wwwroot\\",
+      "ContentRoot": "D:\\01_Projet\\10_German-speed-game\\repo\\Blazor\\Fast typing\\wwwroot\\",
       "BasePath": "_content/Fast typing",
       "RelativePath": "css/site.css",
       "AssetKind": "All",
@@ -255,10 +255,10 @@
       "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
-      "Identity": "C:\\Users\\solan\\Documents\\Dev\\lab\\Blazor\\Fast typing\\wwwroot\\favicon.png",
+      "Identity": "D:\\01_Projet\\10_German-speed-game\\repo\\Blazor\\Fast typing\\wwwroot\\favicon.png",
       "SourceId": "Fast typing",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\solan\\Documents\\Dev\\lab\\Blazor\\Fast typing\\wwwroot\\",
+      "ContentRoot": "D:\\01_Projet\\10_German-speed-game\\repo\\Blazor\\Fast typing\\wwwroot\\",
       "BasePath": "_content/Fast typing",
       "RelativePath": "favicon.png",
       "AssetKind": "All",

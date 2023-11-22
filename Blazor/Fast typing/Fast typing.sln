@@ -11,7 +11,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Fast typing Kernel", "..\Fa
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Fast typing Test", "..\FastTyping\Fast typing Test.csproj", "{7155E062-BECF-417E-BEB1-7490B04D9533}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fast typing App", "..\Fast typing App\Fast typing App.csproj", "{60497B3B-A07F-439C-B29B-1B9D4314D45F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Fast typing App", "..\Fast typing App\Fast typing App.csproj", "{60497B3B-A07F-439C-B29B-1B9D4314D45F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

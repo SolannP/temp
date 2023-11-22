@@ -1,7 +1,6 @@
 /* Font available at :
    - https://www.appstudio.dev/app/OpenIconic.html 
 */
-
 @import url('open-iconic/font/css/open-iconic-bootstrap.min.css');
 html, body {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -69,3 +68,17 @@ a, .btn-link {
     .blazor-error-boundary::after {
         content: "An error has occurred."
     }
+}
+
+
+.url-action {
+    color: inherit;
+    text-decoration: none;
+}
+
+a.url-action {
+    color: inherit;
+    text-decoration: none;
+}
+
+

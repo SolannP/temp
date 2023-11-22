@@ -1,6 +1,6 @@
-﻿@page "/game"
+﻿@page "/game/{idText?}"
+@using FastTypingKernel;
 @using Fast_typing.Data;
-@using Fast_typing_Kernel;
 @inject AppService AppService
 
 <h3>TypingGame</h3>
@@ -15,9 +15,9 @@
     <button type="button" class="btn btn-info">@wordStats.Speed wps</button>
 </p>
 
-<button type="button" class="btn btn-warning" @onclick="DecreaseDifficulty">◀◀ Easier</button>
+<button type="button" class="btn btn-warning" @onclick="DecreaseDifficulty" disabled=@buttonDecreaseDisable>◀◀ Easier</button>
 <button type="button" class="btn btn-primary" @onclick="OnInitializedAsync">Reset</button>
-<button type="button" class="btn btn-warning" @onclick="IncreaseDifficulty">Harder ▶▶</button>
+<button type="button" class="btn btn-warning" @onclick="IncreaseDifficulty" disabled="@buttonIncreaseDisable">Harder ▶▶</button>
 
 <div class="target_game">
     @for (var iLine = 0; iLine < targetGameText.Length; iLine++)
@@ -108,6 +108,12 @@
 
 
 @code {
+    [Parameter]
+    public string? idText { get; set; }
+    [Parameter]
+    [SupplyParameterFromQuery(Name = "level")]
+    public int currentLevel { get; set; } = 0;
+
     public string[][] targetGameText = new string[][] { };
     public int indexLines = 0;
     public int indexWord = 0;
@@ -120,12 +126,15 @@
     public bool gameStop = false;
 
     public List<Difficulty> difficulties = new();
-    public int currentLevel = 0;
+
+    bool buttonDecreaseDisable = false;
+    bool buttonIncreaseDisable = false;
 
     protected override async Task OnInitializedAsync()
     {
-        var idTargetText = (await AppService.GetCommonAppDataAsync()).texts.First().id_text;
-        difficulties = (await AppService.GetTargetTextDataAsync(idTargetText)).difficulties;
+        idText ??= (await AppService.GetCommonAppDataAsync()).all_texts.First().id_text; ;
+        difficulties = (await AppService.GetTargetTextAsync(idText)).difficulties;
+        //(await AppService.GetTargetTextDataAsync(idText)).all_texts.ToList().Aggregate(e => e.difficulties);
         indexLines = 0;
         indexWord = 0;
         targetWord = "";
@@ -138,6 +147,10 @@
 
         targetGameText = ProceedTargetTextLevel(difficulties, currentLevel);
         targetWord = targetGameText[indexLines][indexWord];
+
+        if (difficulties.Min(dif => dif.level) == currentLevel) buttonDecreaseDisable = true; 
+        if (difficulties.Max(dif => dif.level) == currentLevel) buttonIncreaseDisable = true;
+       
     }
 
     public string CurrentWord
@@ -165,25 +178,29 @@
         targetGameText = ProceedTargetTextLevel(difficulties, currentLevel);
         targetWord = targetGameText[indexLines][indexWord];
     }
+
     public void IncreaseDifficulty()
     {
-        Reset();
         var result = difficulties.FirstOrDefault(diff => diff.level == (currentLevel + 1));
         if (result == default) return;
+        buttonDecreaseDisable = false;
         currentLevel++;
-        targetGameText = ProceedTargetTextLevel(difficulties, currentLevel);
-        targetWord = targetGameText[indexLines][indexWord];
+        Reset();
 
+        if (difficulties.FirstOrDefault(diff => diff.level == (currentLevel + 1)) == default) buttonIncreaseDisable = true;
+        else buttonIncreaseDisable = false;
     }
 
     public void DecreaseDifficulty()
     {
-        Reset();
         var result = difficulties.FirstOrDefault(diff => diff.level == (currentLevel - 1));
         if (result == default) return;
         currentLevel--;
-        targetGameText = ProceedTargetTextLevel(difficulties, currentLevel);
-        targetWord = targetGameText[indexLines][indexWord];
+        buttonIncreaseDisable = false;
+        Reset();
+
+        if (difficulties.FirstOrDefault(diff => diff.level == (currentLevel - 1)) == default) buttonDecreaseDisable = true;
+        else buttonDecreaseDisable = false;
     }
 
     public void ProceedInput()
