@@ -22,10 +22,9 @@ date        ; début  ; fin   ; total ; comment ;
 2023/11/21  ; 10h00  ; 12h00 ; 2h00 ; database initialised using file 
 2023/11/21  ; 12h30  ; 14h00 ; 1h30 ; change schema and add basic list of game
 2023/11/22  ; 11h15  ; 12h15 ; 1h00 ; page navigation possibilities
-2023/11/22  ; 15h45  ; __h__ ; _h__ ; 
-
-
-/14
+2023/11/23  ; 12h00  ; 13h30 ; 1h30 ; Bug fix ;
+2023/11/23  ; 14h30  ; 15h45 ; 1h15 ; Bug fix ;
+2023/11/23  ; 16h10  ; 17h00 ; 1h00 ; data ;
 
 =====================================================
 Make a game for speed typing with german declinaison. 
@@ -419,6 +418,27 @@ Intersting possibilities for IEnumerable :
   - Queue / Stack
   - {ReadOnly}List/Dictionary : propose immutable collection
   
-TODO: change url name  
+TODO: change url name for controlleur
+
+I was not in the optimum condition for those. I notice that a bad data schema cost a lot when refactoring is needed. 
+I will continu using Entity framework for data. I suspect in that way migration and refactoring can be easier.   
+
+I confirm that functional programming is great for getting attribut that can be computed using state value and be sure there is the less data/state possible.
+
+> external note : I read from Domain Driven Design that SMART UI is fine for some project (domain data mixed within the UI). But have dramatic result for long term and big project 
+
+# Day 16 - 2023/11/23
+
+Hash can be tricky because by default new make an unique object so we must implement IEquatable, GetHash and Equals(object) (available with ctrl + generate).  
+Code for location is as follow `Path.GetDirectoryName(Assemblie.GetExecutingAssemblies().Location)`  
+Debug is quite hard with blazor SSR: call are made by the servuer, thus impossible to see but offer a good way to hide behavior.
+Work a lot for understand where this bug whith hash set come from, very curious that there is data added into first text if added twice..
+
+Finally gor it : for an immutable list, when we proceed using select the inner object element then aggregate, it work by ref ! Update are donne into the immutable list too !  
+Change Select the Agregate by SelectMany then Distinct but I doesn't find proper way to protect against inside object alteration.
+
+public Get Set is mandatory for .NET but Computed element still present in the json, even without get set (but public!)
+
+No built in method to make immutable element uisng cshapr, very dangerous behavior may occur.
 
 

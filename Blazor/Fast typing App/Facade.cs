@@ -9,14 +9,13 @@ namespace Fast_typing_App
     public class Facade
     {
         public TargetTextData data = new();
-        public ITargetText dataConnecteur;
         private const string indexData = "ALL_COMMON_APPLICATION_DATA";
 
-        public Facade(Uri path) => dataConnecteur = new FileConnecteur(path);
+        public Facade() { }
 
         public async Task<bool> Initialise()
         {
-            var status = data.AddText(new()
+            var status = data.Add(new()
             {
                 id_text = "sein_demo_1",
                 title = "Sein exercice",
@@ -43,18 +42,59 @@ Sie und sie sind"}
                 },
                 tags = new()
                 {
-                    new(){ text= "Sein"}
+                    new(){ text= "Sein"},
+                    new() { text = "Basic"}
                 }
             });
 
-            var status2 = data.AddText(new()
+            var status2 = data.Add(new()
             {
                 id_text = "haben_demo_1",
                 title = "Haben exercice",
                 difficulties = new()
                 {
                     new(){ title =  "Haben exercice", level=0, text=@"haben konjugaison"},
-                    new(){ title = "Haben exercice", level=1, text=@"Haben konjugaison"}
+                    new(){ title = "Haben exercice", level=1, text=@"Haben konjugaison
+Ich habe einen neuen Schüler in der Klasse einen interessanten Brief für den Lehrer geschrieben
+J'ai écrit une lettre intéressante pour le professeur à un nouvel élève dans la classe
+
+Ich habe meiner Schwester einen schönen Blumenstrauß zum Geburtstag gekauft
+J'ai acheté un beau bouquet de fleurs à ma sœur pour son anniversaire
+
+Ich habe meinem Freund einen Rat für die Prüfung gegeben
+J'ai donné un conseil à mon ami pour l'examen"}
+                },
+                categories = new()
+                {
+                    new(){ text = "Verbs", id="VERBS"}
+                },
+                tags = new()
+                {
+                    new(){ text = "Haben"},
+                    new(){ text = "Ich"}
+                }
+            });
+
+            var status3 = data.Add(new()
+            {
+                id_text = "haben_demo_present",
+                title = "Haben full present declinaison",
+                difficulties = new()
+                {
+                    //new(){title = "Haben full present declinaison",level=0,text=""},
+                    new(){title="Haben full present declinaison",level=0,text=@"
+Ich habe einen neuen Job gefunden
+J'ai trouvé un nouveau travail
+Du hast einen interessanten Film gesehen
+Tu as regardé un film intéressant
+Er hat ein neues Buch gekauft
+Il a acheté un nouveau livre
+Wir haben eine Party am Samstag
+Nous avons une fête samedi
+Ihr habt eure Hausaufgaben gemacht
+Vous avez fait vos devoirs
+Sie haben eine wichtige Entscheidung getroffen
+Ils/Elles ont pris une décision importante // Vous avez pris une décision importante" }
                 },
                 categories = new()
                 {
@@ -66,7 +106,33 @@ Sie und sie sind"}
                 }
             });
 
-            return status2.succes && status.succes;
+            var status4 = data.Add(new()
+            {
+                id_text = "common_german_sentence_1",
+                title = "Common german sentence I",
+                difficulties = new()
+                {
+                    new(){title="Common german sentence I",level=0,text=@"test"},
+                    new(){title="Common german sentence I",level=1,text=@"
+Ich spreche ein wenig Deutsch / Je parle un peu Allemand
+Können Sie mir helfen ? / Pouvez vous m'aider ?
+Kannst du mir helfen ? / Pouvez vous m'aider ?
+Wie lange bleibst du? / Combien de temps restez vous ?
+Ich habe mich verlaufen / J'ai perdu mon chemin en marchand
+Ich habe mich verfahren / J'ai perdu mon chemin en conduisant"},
+                },
+                categories = new()
+                {
+                    new(){text="Common sentence", id="COMMON"}
+                },
+                tags = new()
+                {
+                    new(){ text = "Common sentence"}
+                }
+            });
+
+
+            return status4 && status3 && status2 && status;
 
         
 
@@ -98,20 +164,12 @@ Sie und sie sind"}
             return data.all_texts.First(element => element.id_text == id);
         }
 
-        public async Task<bool> AddTargetTextData(TargetText data)
+        public async Task<bool> AddTargetTextData(TargetText input)
         {
-            bool alreadyExist = await dataConnecteur.GetObjectAsync<TargetTextData>(data.id_text) != null ;
+            bool alreadyExist = data.all_texts.Contains(input);
             if (alreadyExist) return false;
-            bool succefullCreation = await dataConnecteur.CreateForceObjectAsync<TargetText>(data.id_text, data);
-            if (succefullCreation)
-            {
-                var commonData = await GetCommonApplicationDataAsync();
-                commonData.all_categories.UnionWith(data.categories);
-                commonData.all_tags.UnionWith(data.tags);
-                var result = await dataConnecteur.CreateForceObjectAsync<FastTypingKernel.TargetTextData>(indexData, commonData);
-                return result;
-            }
-            else return false;
+            data.Add(input);
+            return true;;
         }
     }
 }

@@ -12,7 +12,7 @@ namespace Back_fast_typing.Controllers
     public class TargetTextController : ControllerBase
     {
         private readonly ILogger<TargetTextController> _logger;
-        public static readonly Facade _app = new(new Uri(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location)));
+        public static readonly Facade _app = new();
 
         public TargetTextController(ILogger<TargetTextController> logger, IConfiguration conf)
         {
@@ -24,7 +24,7 @@ namespace Back_fast_typing.Controllers
         [Route("text/{id_text}")]
         public async Task<TargetText> GetTargetTextAsync(string id_text)
         {
-            _app.Initialise();
+            await _app.Initialise();
             return  _app.data.all_texts.First(element => element.id_text == id_text);
         }
 

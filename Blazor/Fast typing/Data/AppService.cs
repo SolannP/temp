@@ -8,7 +8,7 @@ namespace Fast_typing.Data
     public class AppService
     {
 
-        public async Task<FastTypingKernel.TargetTextData> GetCommonAppDataAsync()
+        public async Task<TargetTextData> GetCommonAppDataAsync()
         {
             var client = new HttpClient();
             var request = new HttpRequestMessage(HttpMethod.Get, "https://localhost:7294/api/Common/common_data");

@@ -132,7 +132,7 @@
 
     protected override async Task OnInitializedAsync()
     {
-        idText ??= (await AppService.GetCommonAppDataAsync()).all_texts.First().id_text; ;
+        idText ??= (await AppService.GetCommonAppDataAsync()).all_texts.First().id_text ;
         difficulties = (await AppService.GetTargetTextAsync(idText)).difficulties;
         //(await AppService.GetTargetTextDataAsync(idText)).all_texts.ToList().Aggregate(e => e.difficulties);
         indexLines = 0;

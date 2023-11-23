@@ -11,7 +11,7 @@ namespace Back_fast_typing.Controllers
     {
 
         private readonly ILogger<CommonController> _logger;
-        public static readonly Facade _app = new(new Uri(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location)));
+        public static readonly Facade _app = new();
 
         public CommonController(ILogger<CommonController> logger, IConfiguration conf)
         {

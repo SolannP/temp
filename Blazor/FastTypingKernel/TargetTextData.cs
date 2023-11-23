@@ -1,41 +1,51 @@
-﻿namespace FastTypingKernel
+﻿using System.Collections.Generic;
+using System.Collections.Immutable;
+
+namespace FastTypingKernel
 {
     public class TargetTextData
     {
-        public List<TargetText> all_texts { get; init; } = new();
-        public HashSet<Tag> all_tags { get; init; } = new();
-        public HashSet<Category> all_categories { get; init; } = new();
-        public (bool succes,string? error) AddText(TargetText text)
-        {
-            if (all_texts.Any(element => element.id_text == text.id_text)) return (succes: false, error:  "already existing file");
-            all_texts.Add(text);
-            all_tags.UnionWith(text.tags);
-            all_categories.UnionWith(text.categories);
-            return (succes:true,error:null);
-        }
+        public HashSet<TargetText> data { get; set; } = new();
+        public bool Add(TargetText value) => data.Add(value);
+        public ImmutableHashSet<TargetText> all_texts { get => data.ToImmutableHashSet(); }
+        public ImmutableHashSet<Tag> all_tags  => all_texts.SelectMany(el => el.tags).Distinct().ToImmutableHashSet();
+        public ImmutableHashSet<Category> all_categories => all_texts.SelectMany(el => el.categories).Distinct().ToImmutableHashSet();
     }
 
-    public record TargetText
+    public class TargetText : IEquatable<TargetText>
     {
         public string id_text { get; init; }
         public string title { get; init; }
         public List<Difficulty> difficulties { get; init; }
         public HashSet<Tag> tags { get; init; } = new();
         public HashSet<Category> categories { get; init; } = new();
+
+        public override bool Equals(object? obj) => Equals(obj as TargetText);
+        public bool Equals(TargetText? other) => this.id_text.Equals(other?.id_text, StringComparison.OrdinalIgnoreCase);
+        public override int GetHashCode() => HashCode.Combine(id_text);
+
     }
 
-    public record Tag
+    public class Tag : IEquatable<Tag>
     {
         public string text { get; init; }
+
+        public override bool Equals(object? obj) => Equals(obj as Tag);
+        public bool Equals(Tag? other) => text.Equals(other?.text,StringComparison.OrdinalIgnoreCase);
+        public override int GetHashCode() => HashCode.Combine(text);
     }
 
-    public record Category
+    public class Category : IEquatable<Category> 
     {
         public string id { get; init; } 
         public string text { get; init; }
+
+        public override bool Equals(object? obj) => Equals(obj as Category);
+        public bool Equals(Category? other) => this.id.Equals(other?.id, StringComparison.OrdinalIgnoreCase);
+        public override int GetHashCode() =>  HashCode.Combine(id);
     }
 
-    public record Difficulty
+    public class Difficulty
     {
         public string title { get; init; }
         public int level { get; init; }
