@@ -1,0 +1,19 @@
+version: "1.0"
+services: 
+  fast-typing-db:
+    # SQL Server Express
+    image: "mcr.microsoft.com/mssql/server:2019-latest"
+    # Take by default the name : <folder>-<service_name> but can be set bellow when uncomment
+    container_name: "SQL_SERVER"
+    ports:
+    - "1433:1433"
+    environment:
+    - MSSQL_PID=Express
+     # system administrator (userid = 'sa') 
+    - MSSQL_SA_PASSWORD=yourStrong(!)Password
+    - ACCEPT_EULA=Y
+    restart: always
+    volumes:
+    - "./sql/data:/var/opt/mssql/data"
+    - "./sql/log:/var/opt/mssql/log"
+    - "./sql/secrets:/var/opt/mssql/secrets"
