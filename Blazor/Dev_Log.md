@@ -26,6 +26,12 @@ date        ; début  ; fin   ; total ; comment ;
 2023/11/23  ; 14h30  ; 15h45 ; 1h15 ; Bug fix ;
 2023/11/23  ; 16h10  ; 17h00 ; 1h00 ; data ;
 
+2023/11/24  ; 10h30  ; 11h00 ; 0h30 ; clean and test
+2023/11/25  ; 08h30  ; 09h44 ; 1h15 ; look for SQL Server install using docker 
+2023/11/28  ; 18h00  ; 19h45 ; 1h45 ; Make SQL server within docker working
+
+
+
 =====================================================
 Make a game for speed typing with german declinaison. 
 data : 2h
@@ -285,7 +291,7 @@ GET : https://current-serv/text/{id_text}
 # Day 13 - 2023/11/19 
 
 Spend some time thinking for onion architecture but can be death by design pattern. Must not adding other concept. Almost started to add adaptater and other layer of complexity. 
-I ended up make it as much as simple as possible. Kernel have data and format is made in a way to avoid the use of attribut or mapping : data is store as snake case. Bdd is axternal lib.
+I ended up make it as much as simple as possible. Kernel have data and format is made in a way to avoid the use of attribut or mapping : data is store as snake case. Bdd is external lib.
 It's not because there is some naming convention style that we have to follow it blindly.
 Nice separation of consernce is really great, I know were to put logic and I think anyone comming would understand how it work.
 
@@ -441,4 +447,49 @@ public Get Set is mandatory for .NET but Computed element still present in the j
 
 No built in method to make immutable element uisng cshapr, very dangerous behavior may occur.
 
+# Conclusion 
 
+It took around 12 hours (out of 14 hours) to add basic web service, back, architecture, blazor page navigation and update schema.  
+Regarding all those change, it take minimal amount of time to update.
+A bug regarding false immutable object took a lots of time to understand and solve (object asignement are by ref and not by value, even readonly collection are not safe)  
+That an aspect of functional programming that must be taking carefully with C#.
+It was an occasion to work on the different Collection type.
+One of the most important steep is to define the schema.
+Interesting concept appear while reading on DDD book : smart UI is a pattern to avoid (in some circonstances) but have some strenght.  
+
+=====================================================
+Task I : change url name for controlleur  : 1h
+Task II : Explore Mud blazor  : 4h => [ ] +Video ?
+Task III : Add SQL Server within Docker  : 2h 
+Task IV : Link with EF : migre data to EF schema (2h) + use EF action for current data interaction (4h) 
+Task V : Account creation  (create account 1h + stat reccording for each game 2h + add visual of succes 1h)  (8h)
+
+TOTAL : 19h
+
+if time : resolve https://github.com/MudBlazor/MudBlazor/issues/4310
+======================================================
+
+
+# Days 17 - 2023/11/24
+
+Task I : change url name for controlleur made within 15 minute (not 1 hour) + variabilisation of url using appsetings.
+Task II : Explore Mud blazor 
+
+Nothing special, at frist sight, it seem wize to choose bootsrap or Mudblazor but avoid a mix of both.  
+
+# Day 18 - 2023/11/25
+
+Task III : Add SQL Server within Docker  : 2h  (rather explore SQL server 4h ?)
+
+# Day 19 - 2023/11/28
+
+I wander if add docker is maybe over engeenering the solution. I read some artciles that state to avoid docker in some case. Especialy docker compose or named image, I don't now why.  
+Find interesting article that state : "Using docker-compose is fine if you are working on a single machine or don’t need to distribute containers across multiple inter-connected machines".  
+In additioon it's fine for small team. For bigger one k8s is the proper way to go. 
+I want to spend the minimum time for deployement and trouble shooting, docker deployement will be done incrementaly, for now let's keep SQL server instance only, automatic deployement will be added latter.
+that exactly what we are looking but even, I don't waont to add special steep for configure dokcer deployement  
+
+It take a lot of time to make it work fine. It's done, i should not have any new problem.  
+I make an interactive readme/helper script as documentation
+Next steep will be to know SQL Server way of working in details. I had a course with school some time ago, i can re open it + get in touch with the teacher we had.  
+Schould also avoid latest and use something like 2022-CU10-ubuntu-22.04 (next time)

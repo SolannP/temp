@@ -131,6 +131,39 @@ Ich habe mich verfahren / J'ai perdu mon chemin en conduisant"},
                 }
             });
 
+            data.Add(new()
+            {
+                id_text = "french",
+                categories = new()
+                {
+                    new(){text="Franch"}
+                },
+                difficulties = new()
+                {
+                    new()
+                    {
+                        text="bonjour c est un test de vitesse",
+                        level=0,
+                        title="French"
+                    },
+                    new()
+                    {
+                        level=1,
+                        title="French",
+                         text="Bonjour,c'est un test de vitesse",
+                    }
+                },
+                tags = new()
+                {
+                    new()
+                    {
+                        text="Exemple"
+                    }
+                },
+                title = "Exemple FR"
+            });
+
+
 
             return status4 && status3 && status2 && status;
 
