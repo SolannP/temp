@@ -8,7 +8,8 @@ services:
     ports:
     - "1433:1433"
     environment:
-    - MSSQL_PID=Express
+    # For production use, Express is to use but get less functionality
+    - MSSQL_PID=Developer
      # system administrator (userid = 'sa') 
     - MSSQL_SA_PASSWORD=yourStrong(!)Password
     - ACCEPT_EULA=Y

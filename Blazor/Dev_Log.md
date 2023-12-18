@@ -29,7 +29,21 @@ date        ; début  ; fin   ; total ; comment ;
 2023/11/24  ; 10h30  ; 11h00 ; 0h30 ; clean and test
 2023/11/25  ; 08h30  ; 09h44 ; 1h15 ; look for SQL Server install using docker 
 2023/11/28  ; 18h00  ; 19h45 ; 1h45 ; Make SQL server within docker working
+2023/11/29  ; 09h00  ; 10h30 ; 1h30 ; Find deep detail SQL server ressources
 
+2023/12/01  ; 09h00  ; 10h00 ; 1h00 ; Page 42
+
+
+2023/12/__  ; 09h15  ; __h__ ; _h__ ; __
+2023/12/__  ; 09h15  ; __h__ ; _h__ ; __
+2023/12/__  ; 09h15  ; __h__ ; _h__ ; __
+2023/12/__  ; 09h15  ; __h__ ; _h__ ; __
+2023/12/__  ; 09h15  ; __h__ ; _h__ ; __
+2023/12/__  ; 09h15  ; __h__ ; _h__ ; __
+2023/12/__  ; 09h15  ; __h__ ; _h__ ; __
+2023/12/__  ; 09h15  ; __h__ ; _h__ ; __
+2023/12/__  ; 09h15  ; __h__ ; _h__ ; __
+2023/12/__  ; 09h15  ; __h__ ; _h__ ; __
 
 
 =====================================================
@@ -493,3 +507,17 @@ It take a lot of time to make it work fine. It's done, i should not have any new
 I make an interactive readme/helper script as documentation
 Next steep will be to know SQL Server way of working in details. I had a course with school some time ago, i can re open it + get in touch with the teacher we had.  
 Schould also avoid latest and use something like 2022-CU10-ubuntu-22.04 (next time)
+
+# Day 20 - 2023/11/29
+
+I start the book "T-SQL Fundamentals" (1_316p) for getting a solid basis of SQL Server fondamentals. 
+I will take some time to proceed, I won't count the time spend for "sharpen the saw" regarding SQL into this project. Nevertheless I will keep trace of the time spend for getting concept.
+
+
+
+Course to sum up : 
+  file:///D:/03_Cours/2A/AdminBDD/1.%20Cours8.pdf
+  file:///D:/03_Cours/2A/AdminBDD/Cours2_FIP_2A.pdf
+  file:///D:/03_Cours/2A/AdminBDD/Cours3%20-%20Architecture%20dun%20moteur%20relationnel.pdf
+  SQL Server Management Studio
+  To proceed : file:///D:/05_Ressource_Perso/SQL/T-SQL%20Fundamentals%20(Itzik%20Ben-Gan)%20(Z-Library).pdf

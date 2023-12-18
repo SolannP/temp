@@ -8,7 +8,8 @@ function GetUsage {
     -d, --docker-compose        reset init and start docker instance
     -h, --help                  show this help
     -c, --clean                 clean all docker data
-    -a, --acces                 create sqlcmd connexion
+    -s, --sql-acces             acces container as sqlcmd user
+    -u, --ubuntu-acces          acces container as ubuntu user 
     -r, --ressources            print used ressources
 EOF
 }
@@ -39,12 +40,12 @@ services:
   fast-typing-db:
     # SQL Server Express
     image: "mcr.microsoft.com/mssql/server:2019-latest"
-    # Take by default the name : <folder>-<service_name> but can be set bellow when uncomment
+    # Take by default the name : <folder>-<service_name> but can be set like bellow
     container_name: "$docker_container_name"
     ports:
     - "1433:1433"
     environment:
-    - MSSQL_PID=Express
+    - MSSQL_PID=Standard
      # system administrator (userid = 'sa') 
     - MSSQL_SA_PASSWORD=yourStrong(!)Password
     - ACCEPT_EULA=Y
@@ -71,10 +72,14 @@ then
 	docker image prune
 	docker volume prune
 	exit 0
-elif [[ $1 =~ "-a" ]]
+elif [[ $1 =~ "-s" ]]
 then 
-	echo docker exec -it $docker_container_name /opt/mssql-tools/bin/sqlcmd -S localhost -U $sql_admin_user_id -P $sql_admin_password
+	echo '$>'docker exec -it $docker_container_name /opt/mssql-tools/bin/sqlcmd -S $docker_network_host -U $sql_admin_user_id -P $sql_admin_password
 	docker exec -it $docker_container_name /opt/mssql-tools/bin/sqlcmd -S $docker_network_host -U $sql_admin_user_id -P $sql_admin_password
+elif [[ $1 =~ "-u" ]]
+then 
+echo '$>'docker exec -it $docker_container_name /bin/bash
+	docker exec -it $docker_container_name /bin/bash
 elif [[ $1 =~ "-h" ]]
 then 
   GetUsage
