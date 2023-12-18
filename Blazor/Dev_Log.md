@@ -493,3 +493,12 @@ It take a lot of time to make it work fine. It's done, i should not have any new
 I make an interactive readme/helper script as documentation
 Next steep will be to know SQL Server way of working in details. I had a course with school some time ago, i can re open it + get in touch with the teacher we had.  
 Schould also avoid latest and use something like 2022-CU10-ubuntu-22.04 (next time)
+
+"Efforts to automate what must be the product of thought are naive and conterproductive"
+
+# Side note - 2023/12/12 
+
+Since the last input, I wanted to get more confident with SQL Server for career purpose.  
+It will be the choosen BDD but it can be change using something else thanks to EF and the correct connector.  
+By the past I have meet some trouble with MySQL connecteur so SQL Server is not so bad.
+I started a book that cover the basic and advanced of TSQL. The book is really good, it help to have strong base and a deeper knowledge of SQL & TSQL.  
