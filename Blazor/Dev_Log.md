@@ -513,11 +513,18 @@ Schould also avoid latest and use something like 2022-CU10-ubuntu-22.04 (next ti
 I start the book "T-SQL Fundamentals" (1_316p) for getting a solid basis of SQL Server fondamentals. 
 I will take some time to proceed, I won't count the time spend for "sharpen the saw" regarding SQL into this project. Nevertheless I will keep trace of the time spend for getting concept.
 
-
-
 Course to sum up : 
   file:///D:/03_Cours/2A/AdminBDD/1.%20Cours8.pdf
   file:///D:/03_Cours/2A/AdminBDD/Cours2_FIP_2A.pdf
   file:///D:/03_Cours/2A/AdminBDD/Cours3%20-%20Architecture%20dun%20moteur%20relationnel.pdf
   SQL Server Management Studio
-  To proceed : file:///D:/05_Ressource_Perso/SQL/T-SQL%20Fundamentals%20(Itzik%20Ben-Gan)%20(Z-Library).pdf
+  To proceed : file:///D:/05_Ressource_Perso/SQL/T-SQL%20Fundamentals%20(Itzik%20Ben-Gan).pdf
+
+"Efforts to automate what must be the product of thought are naive and conterproductive"
+
+# Side note - 2023/12/12 
+
+Since the last input, I wanted to get more confident with SQL Server for career purpose.  
+It will be the choosen BDD but it can be change using something else thanks to EF and the correct connector.  
+By the past I have meet some trouble with MySQL connecteur so SQL Server is not so bad.
+I started a book that cover the basic and advanced of TSQL. The book is really good, it help to have strong base and a deeper knowledge of SQL & TSQL.  
