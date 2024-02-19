@@ -33,6 +33,7 @@ date        ; début  ; fin   ; total ; comment ;
 
 2023/12/01  ; 09h00  ; 10h00 ; 1h00 ; Page 42
 
+2024/02/18 ; __h__  ; __h__ ; 4h00 ; Start on angular again    
 
 2023/12/__  ; 09h15  ; __h__ ; _h__ ; __
 2023/12/__  ; 09h15  ; __h__ ; _h__ ; __
@@ -522,9 +523,47 @@ Course to sum up :
 
 "Efforts to automate what must be the product of thought are naive and conterproductive"
 
-# Side note - 2023/12/12 
+# Side note I - 2023/12/12 
 
 Since the last input, I wanted to get more confident with SQL Server for career purpose.  
 It will be the choosen BDD but it can be change using something else thanks to EF and the correct connector.  
 By the past I have meet some trouble with MySQL connecteur so SQL Server is not so bad.
 I started a book that cover the basic and advanced of TSQL. The book is really good, it help to have strong base and a deeper knowledge of SQL & TSQL.  
+
+# Side note II - 2024/01/22 
+
+I had to interupt my SQL book lecture : my computer CPU is having bad time when running SQL server, SQL client (Dbeaver) and the Web client(firefox).
+Nevertheless, got a very solid base for next SQL stuff.
+
+Should initialise online blog (CMS Pyrahna) + hosted git
+
+# Side note III - 2024/02/16
+
+Cms have been made at wwww.spuygrneier.work.gd, it gather lots of memo (only 3 are public for now).
+
+# Day 21 - 2024/02/16 
+
+After finish the Angular course for advanced user, I'm looking to re make it using new gained knwoledge. 
+It don't followed the router or ngRX course yet. If I follow this course, this project will be used for sandbox.
+I suppose that after spending so much tme, i will be able to make it in a very perfomance manner. 
+When I look on the time spend on this document, it seems that I can achieve significant work advance of 12 hours batch.
+I will make front only site and abd consider as the end of this project. If there is interesting feedback I will continue to work on : i will add a way to give feedback
+
+Super simple but quite good css : 4h/4h (css only: https://codepen.io/pubic-static-puygrenier-solann/pen/poYGPeV)
+
+
+
+#Day 22 - 2024/02/18 
+
+I work on angular for 4h and result is quite messy : Make it work on angular : 4h/5h    
+Seem that M-V-VM pattern is the one to apply for better result in angular.
+
+Test of Jasmin for test; find enougth solution for the tests i made on model elements 
+
+
+Add 3 static fr exercice : 1h00
+Add 3 static german exercice : 1h00
+Add 3 static english exercice : 1h00
+Deploy : 2h
+Gathering user stat : ???h 
+Add button for switch FR/EN/DE

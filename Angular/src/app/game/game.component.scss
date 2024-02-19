@@ -1,0 +1,79 @@
+/** CSS «API »
+  <span class="word [previous|current|comming]">
+    <span class="[succes|error]">[the target letter]</span>
+  </span><span class="space [previous|current|comming]"><span class="[succes|error]">[SPACE]</span></span>
+
+Color taken form : https://www.tutorialrepublic.com/css-reference/css-color-names.php
+*/
+
+/**** indicators section ****/
+.indicators {
+    font-size:medium;
+    font-family: monospace;
+    padding:5px;
+    display:flex;
+    flex-direction:row;
+    align-item:center;
+    justify-content:space-between ;
+  }
+  .indicators > span {
+    background-color:ghostwhite;
+    border-radius:4vh;
+    padding:5px;
+    color:white;
+    background-color:dodgerblue;
+  }
+  
+  /**** main part section ****/
+  .game {
+    margin: auto;
+    width:auto;
+    padding:5px;
+    font-size:x-large;
+    font-family: monospace;
+    border: 2px solid gainsboro;
+  }
+  .gTarget{
+    background-color:ghostwhite;
+    border-radius:2vh 2vh 0% 0%;
+    height:75vh;
+    overflow:hidden;
+    border-bottom: 1px solid gainsboro;
+  }
+  .gInput{
+    background-color:ghostwhite;
+    border-radius:0% 0% 2vh 2vh;
+    border-top: 1px solid gainsboro;
+  }
+  
+  /**** trick and workaround ****/
+  .word {display: inline-flex;}/* Make several tag of character to appear inline for div and span */
+  .space {}/* IN HTML, the span for space MUST BE on the same line than the closing span.word */
+  
+  /**** previous section ****/
+  .previous .succes {
+    background-color:honeydew;
+    color:forestgreen;
+  }
+  .previous .error {
+    background-color:mistyrose;
+    text-decoration:  underline dotted red;
+    color:black;
+  }
+  
+  /**** current section ****/
+  .current{
+    font-weight: bold;
+  }
+  .current .succes {
+   background-color: darkseagreen;
+  }
+  .current .error {
+    background-color:crimson;
+  }
+  .next {
+    text-decoration: underline;
+    outline: 1px solid grey;
+  }
+  
+  /**** comming section ****/

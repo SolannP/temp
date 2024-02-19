@@ -1,0 +1,105 @@
+<!-- WORKAROUND FOR SPACE : the span for space MUST be on the same line that the closing word span -->
+<div class="indicators">
+    <span class="timer">Timer: <span>0:00</span></span>
+    <span>Speed: <span></span>wps*</span>
+    <span>Succes: <span>__/__</span><span>(__%)</span> </span>
+    <span>Error: <span>__/__</span> <span>(__%)</span></span>
+  </div>
+  <div class="game gTarget">
+    <span class="word previous">
+      <span class="succes">s</span>
+      <span class="error" title="o">i</span>
+      <span class="succes">t</span>
+    </span>
+    <span class="space previous">
+        <span class="succes">&nbsp;</span>
+    </span>
+    <span class="word previous">
+      <span class="succes">l</span>
+      <span class="succes">o</span>
+      <span class="succes">r</span>
+    </span><span class="space previous"><span class="error" title="x">&nbsp;</span></span>
+    <span class="word previous">
+      <span class="succes">s</span>
+      <span class="succes">i</span>
+      <span class="succes">t</span>
+    </span><span class="space previous"><span class="succes">&nbsp;</span></span>
+    <span class="word previous">
+      <span class="succes">b</span>
+      <span class="error">y</span>
+      <span class="succes">a</span>
+    </span><span class="space previous"><span class="error">&nbsp;</span></span>
+    <span class="word current">
+      <span class="error">l</span>
+      <span class="succes">o</span>
+      <span class="succes">o</span>
+      <span class="next">r</span>
+    </span><span class="space comming"><span class="">&nbsp;</span></span>
+  <span class="word comming">
+      <span class="">l</span>
+      <span class="">o</span>
+      <span class="">r</span>
+    </span><span class="space comming"><span class="">&nbsp;</span></span>
+  <span class="word comming">
+      <span class="">l</span>
+      <span class="">o</span>
+      <span class="">r</span>
+    </span><span class="space comming"><span class="">&nbsp;</span></span>
+  <span class="word comming">
+      <span class="">l</span>
+      <span class="">o</span>
+      <span class="">r</span>
+    </span><span class="space comming"><span class="">&nbsp;</span></span>
+  <span class="word comming">
+      <span class="">l</span>
+      <span class="">o</span>
+      <span class="">r</span>
+    </span><span class="space comming"><span class="">&nbsp;</span></span>
+  <span class="word comming">
+      <span class="">l</span>
+      <span class="">o</span>
+      <span class="">r</span>
+    </span><span class="space comming"><span class="">&nbsp;</span></span>
+  <span class="word comming">
+      <span class="">l</span>
+      <span class="">o</span>
+      <span class="">r</span>
+    </span><span class="space comming"><span class="">&nbsp;</span></span>
+  <span class="word comming">
+      <span class="">f</span>
+      <span class="">i</span>
+      <span class="">n</span>
+    </span><span class="space comming"><span class="">&nbsp;</span></span>
+
+    @for(w of gWords; track w.IndexWord){
+        @if (w.IsWord) {
+            <span [ngClass]="GetWordClass(this.currendIndexWord,w.IndexWord)">
+
+                @if(IsPrevious(this.currendIndexWord,w.IndexWord)){
+                    @for(c of w.gChars; track c.IndexChar){
+                        <span [class]="c.Succes ? 'succes' : 'error'" [title]="c.Succes ? '' : c.Current ">{{c.Target}}</span>
+                    }
+                }
+                @else if(IsCurrent(this.currendIndexWord,w.IndexWord)){
+                    @for(c of w.gChars; track c.IndexChar){
+                        <span>{{c.Target}}</span>
+                    }
+                }
+                @else {
+                    @for(c of w.gChars; track c.IndexChar){
+                        <span>{{c.Target}}</span>
+                    }
+                }
+                
+            </span>
+        }
+        @else { <!-- w.IsSpace-->
+            <span class="space comming">
+                <span [class]="w.gChars[0].Succes ? 'succes' : 'error'" [title]="w.gChars[0].Succes ? '' : w.gChars[0].Current ">&nbsp;</span>
+            </span>
+        }
+      }
+  </div>
+  <div class="game gInput">
+    <input type="text" [value]="currentWordInput">
+  </div>
