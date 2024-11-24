@@ -1,0 +1,74 @@
+
+#!/bin/bash
+#set -x
+#set -u
+
+TARGET_COMPRESSION=$2
+ARCHIVE_TO_EXTRACT=$2
+
+TITLE_ARCHIVE=$4
+
+ARCHIVE_PATH=$6
+
+function GetUsage {
+  cat << EOF
+
+  Usage: $(basename $0) -p TARGET_COMPRESSION -t TITLE -a ARCHIVE_PATH
+  Usage: $(basename $0) -x ARCHIVE_TO_EXTRACT
+
+  Arguments:
+    -p, --path-for-result       path to use
+    -t, --title                 title of the archive. File will be backup.<TITLE>.tar.gz
+    -a, --archive               archive backup path
+
+    -x, --extract               extract the archive (at the current location)
+
+    -h, --help                  show this help
+
+EOF
+}
+
+function Run_Script(){
+  # Load aproximation of total size that tar will handle
+  FROMSIZE=`du -sk --apparent-size ${TARGET_COMPRESSION} | cut -f 1`;
+
+  # Perform division of total size for 50 steeps action
+  CHECKPOINT=`echo $((${FROMSIZE}/50))`;
+
+  # Visual space/time estimated
+  echo "Estimated: [==================================================]";
+
+  # Show progress using checkpoint update. Can be improve using 49 char and \b-> as checkup-actions..
+  echo -n "Progess:   [";
+
+  # Start archiving
+  tar --create --gzip --file="$ARCHIVE_PATH"/backup."$TITLE_ARCHIVE".tar.gz \
+      --recursion --no-same-owner --no-same-permissions --owner=root --group=root \
+      --checkpoint=$CHECKPOINT --checkpoint-action="ttyout=>" \
+      --record-size=1K \
+      -P $TARGET_COMPRESSION;
+        echo "]"
+}
+
+function Extract(){
+  tar -xf "$ARCHIVE_TO_EXTRACT" --no-same-owner --no-same-permissions
+}
+
+
+if [[ $1 =~ "p" ]] && [[ $3 =~ "t" ]] && [[ $5 =~ "a" ]]
+then
+  Run_Script
+  exit $?
+elif [[ $1 =~ "x" ]]
+then
+  Extract
+  exit 0
+elif [[ $1 =~ "-h" ]]
+then
+  GetUsage
+  exit 0
+elif [[ $1 =~ "" ]]
+then
+  GetUsage
+  exit 0
+fi
